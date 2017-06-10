@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,700,900');
+
+$nunito: 'Nunito', sans-serif;
+$dark-blue: #0481ac;
+$mid-blue: #1cb6e6;
+$light-blue: #f1f6fb;
+$white: #ffffff;
+$dark-white: #fafafa;
+$grey: #D7DADB;
+
+@mixin breakpoint($point) {
+  @if $point == desktop {
+    @media (min-width: 70em) { @content ; }
+  }
+  @else if $point == laptop {
+    @media (min-width: 64em) { @content ; }
+  }
+  @else if $point == tablet {
+    @media (min-width: 50em) { @content ; }
+  }
+  @else if $point == phablet {
+    @media (min-width: 37.5em)  { @content ; }
+  }
+  @else if $point == mobileonly {
+    @media (max-width: 37.5em)  { @content ; }
+
+  }
+}

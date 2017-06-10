@@ -1,0 +1,64 @@
+@import '../settings';
+
+.we-are {
+  padding: 65px 0 235px 0;
+  background: #F1F6FB;
+}
+
+.we-are__subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.we-are__title {
+  text-align: left;
+  font-size: 2.3rem;
+  margin-top: 0;
+}
+
+.we-are__body {
+  margin-top: 30px;
+  text-align: left;
+  color: #747474;
+}
+
+.we-are__img {
+  width: 100%;
+  @include breakpoint('tablet') {
+    float: right;
+    max-width: 700px;
+  }
+}
+
+.we-are__media {
+  padding-top: 65px;
+  justify-content: flex-end;
+  max-width: 890px;
+}
+
+.we-are__services {
+  width: 100%;
+  padding: 35px;
+  background: $mid-blue;
+  left: 0;
+  top: 420px;
+  position: absolute;
+  .button {
+    text-align: left;
+    float: left;
+  }
+  @include breakpoint('tablet') {
+    width: 420px;
+  }
+}
+
+.we-are__body-cta {
+  width: 100%;
+  @include breakpoint('tablet') {
+    font-size: 1.3rem;
+    text-align: left;
+    color: white;
+  }
+}

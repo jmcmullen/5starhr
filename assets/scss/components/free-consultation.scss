@@ -1,0 +1,45 @@
+@import '../settings';
+
+.free-consult {
+  background-color: #f1f6fb;
+  .container {
+    padding: 65px 0;
+  }
+}
+
+.free-consult__body {
+  span {
+    margin-right: 25px;
+    margin-left: 5px;
+  }
+}
+
+.free-consult__icon {
+  width: 20px;
+  vertical-align: sub;
+}
+
+.free-consult__title {
+  font-size: 2rem;
+  padding-top: 75px;
+  font-weight: 300;
+}
+
+.free-consult__form {
+  display: block;
+  margin: 25px auto;
+  padding: 40px 45px 0 45px;
+  text-align: left;
+  width: 100%;
+  max-width: 300px;
+  background-color: #fafafa;
+  border: 1px solid #dedede;
+  .free-consult__input {
+    width: 100%;
+  }
+  .button-primary {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+  }
+}

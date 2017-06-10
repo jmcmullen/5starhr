@@ -1,0 +1,66 @@
+@import '../settings';
+
+.we-work {
+  margin-top: 25px;
+  padding: 105px 0 65px 0;
+  .button {
+    float: left;
+  }
+}
+
+.we-work__img {
+  display: inline-block;
+  max-width: 30px;
+}
+
+.we-work__service-list {
+  margin-top: 25px;
+}
+
+.we-work__service {
+  margin: 15px 0 15px 100px;
+  text-align: left;
+}
+
+.we-work__service-title {
+  display: inline-block;
+  font-size: 1.4rem;
+  margin: 0 25px;
+  vertical-align: super;
+}
+
+.we-work__title-cta {
+  color: $white;
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+.we-work__media {
+  padding-top: 65px;
+  justify-content: flex-start;
+  max-width: 890px;
+}
+
+.we-work__services {
+  width: 420px;
+  padding: 35px;
+  background: #1cb6e6;
+  right: 0;
+  top: 160px;
+  position: absolute;
+}
+
+.we-work__body-cta {
+  font-size: 1rem;
+  text-align: left;
+  color: white;
+}
+
+.we-work__img-cta {
+  width: 100%;
+  @include breakpoint('tablet') {
+    float: left;
+    margin-top: 240px;
+    margin-bottom: 65px;
+  }
+}
