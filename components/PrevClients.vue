@@ -2,68 +2,47 @@
   <section class="prev-clients">
     <h1 class="prev-clients__title">Trusted By</h1>
     <div class="container">
-      <div class="row">
-        <div class="two columns">
-          <img src="../assets/img/1-cover-logo.jpg" alt="" class="prev-clients__logo" style="margin-top: 10px;">
+      <div class="grid">
+        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
+          <img src="../assets/img/1-cover-logo.jpg"
+            alt="1 Cover Logo"
+            class="prev-clients__logo prev-clients__logo--cover">
         </div>
-        <div class="two columns">
-          <img src="../assets/img/one-education-logo.png" alt="" class="prev-clients__logo" style="width: 120px;">
+        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
+          <img src="../assets/img/paykel-logo.png"
+          alt="Paykel Logo"
+          class="prev-clients__logo prev-clients__logo--paykel">
         </div>
-        <div class="two columns">
-          <img src="../assets/img/positive-real-estate-logo.jpg" alt="" class="prev-clients__logo" style="margin-top: 20px;">
+        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
+          <img src="../assets/img/positive-real-estate-logo.jpg"
+          alt="Positive Real Estate Logo"
+          class="prev-clients__logo prev-clients__logo--pos-estate">
         </div>
-        <div class="two columns">
-          <img src="../assets/img/crop-smart-logo.jpg" alt="" class="prev-clients__logo" style="margin-top: 30px;">
+        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
+          <img src="../assets/img/crop-smart-logo.jpg"
+          alt="Crop Smart Logo"
+          class="prev-clients__logo prev-clients__logo--crop-smart">
         </div>
-        <div class="two columns">
-          <img src="../assets/img/playgroup-nsw-logo.jpg" alt="" class="prev-clients__logo" style="width: 100px;">
+        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
+          <img src="../assets/img/playgroup-nsw-logo.jpg"
+          alt="Playgroup NSW Logo"
+          class="prev-clients__logo prev-clients__logo--playgroup">
         </div>
-        <div class="two columns">
-          <img src="../assets/img/paykel-logo.png" alt="" class="prev-clients__logo" style="margin-top: 25px;">
+        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
+          <img src="../assets/img/one-education-logo.png"
+          alt="One Education Logo"
+          class="prev-clients__logo prev-clients__logo--one-edu">
         </div>
       </div>
     </div>
     <div class="container">
       <div class="prev-clients__testimonial six columns">
-        <a href="/testimonials" class="button">See what our clients have to say</a>
+        <a href="/testimonials" class="button">
+          Read testimonials from&nbsp;our clients
+        </a>
       </div>
     </div>
   </section>
 </template>
 
-<style lang="scss" scoped>
-  $dark-blue: #0481ac;
-  $light-blue: #f1f6fb;
-  $white: #ffffff;
-  $dark-white: #fafafa;
-  $grey: #D7DADB;
-
-  .prev-clients {
-    margin: 25px 0 0;
-    padding: 65px 20px;
-  }
-
-  .prev-clients__title {
-    text-align: center;
-    color: $dark-blue;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin-bottom: 0;
-    letter-spacing: 2px;
-  }
-
-  .prev-clients__logo {
-    margin: 0 auto;
-    width: 100%;
-    padding: 25px;
-  }
-
-  .prev-clients__testimonial {
-    margin-top: 25px;
-  }
-</style>
-
-<script>
-  export default {}
-</script>
+<style lang="scss" src="../assets/scss/components/prev-clients.scss" />

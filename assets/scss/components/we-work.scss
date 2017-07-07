@@ -2,31 +2,48 @@
 
 .we-work {
   margin-top: 25px;
-  padding: 105px 0 65px 0;
+  padding: 35px 0 0;
   .button {
     float: left;
+    margin-top: 25px;
+  }
+  .container {
+    padding: 0 20px;
+    &--mob {
+      padding: 0;
+    }
+  }
+  @include av-mq(lap-and-up) {
+    padding: 65px 0 65px 0;
   }
 }
 
 .we-work__img {
   display: inline-block;
-  max-width: 30px;
+  max-width: 50px;
 }
 
 .we-work__service-list {
-  margin-top: 25px;
+  &.grid__cell {
+    margin-top: 25px;
+  }
 }
 
 .we-work__service {
-  margin: 15px 0 15px 100px;
+  margin: 15px 0 15px 15px;
   text-align: left;
+  @include av-mq(lap-and-up) {
+    margin: 15px 0 15px 100px;
+  }
 }
 
 .we-work__service-title {
   display: inline-block;
   font-size: 1.4rem;
-  margin: 0 25px;
   vertical-align: super;
+  @include av-mq(lap-and-up) {
+    margin-bottom: 10px;
+  }
 }
 
 .we-work__title-cta {
@@ -37,30 +54,35 @@
 
 .we-work__media {
   padding-top: 65px;
-  justify-content: flex-start;
   max-width: 890px;
 }
 
 .we-work__services {
-  width: 420px;
+  margin-top: -7px;
   padding: 35px;
   background: #1cb6e6;
-  right: 0;
-  top: 160px;
-  position: absolute;
+  @include av-mq(lap-and-up) {
+    width: 420px;
+    margin-top: 260px;
+    margin-left: 490px;
+    position: absolute;
+  }
 }
 
 .we-work__body-cta {
-  font-size: 1rem;
+  font-size: 18px;
   text-align: left;
   color: white;
+  margin-top: 10px;
 }
 
 .we-work__img-cta {
   width: 100%;
-  @include breakpoint('tablet') {
+  max-width: 700px;
+  margin-top: 45px;
+  @include av-mq(lap-and-up) {
     float: left;
-    margin-top: 240px;
-    margin-bottom: 65px;
+    margin-top: 100px;
+    margin-bottom: 95px;
   }
 }

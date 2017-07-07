@@ -1,4 +1,5 @@
 @import 'settings';
+@import 'typography';
 
 body {
   font-size: 16px;
@@ -16,26 +17,31 @@ a {
 
 .wrapper {
   padding-top: 80px;
+  overflow-x: hidden;
 }
 
 .container {
   max-width: 1110px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  margin: 0 auto;
 }
 
 input[type="submit"],
 .button {
+  padding: 10px 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  text-decoration: none;
   background-color: darken($grey, 30%);
   border-color: darken($grey, 30%);
   color: white;
   transition: background-color .3s ease-in;
   &.button-primary {
-    border-color: $dark-blue;
-    background-color: $dark-blue;
+    border-color: $mid-blue;
+    background-color: $mid-blue;
     color: white;
   }
   &:hover {
@@ -43,8 +49,12 @@ input[type="submit"],
     background-color: darken($grey, 20%);
     border-color:  darken($grey, 30%);
     &.button-primary {
-      background-color: lighten($dark-blue, 10%);
-      border-color: $dark-blue;
+      background-color: lighten($mid-blue, 10%);
+      border-color: $mid-blue;
     }
   }
+}
+
+.clearfix {
+  clear: both;
 }

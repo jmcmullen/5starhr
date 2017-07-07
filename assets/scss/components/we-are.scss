@@ -1,8 +1,15 @@
 @import '../settings';
 
 .we-are {
-  padding: 65px 0 235px 0;
-  background: #F1F6FB;
+  padding: 65px 0 0;
+  background: #f1f6fb;
+  @include av-mq(lap-and-up) {
+    padding-bottom: 125px;
+  }
+}
+
+.we-are__copy {
+  padding: 0 20px;
 }
 
 .we-are__subtitle {
@@ -16,9 +23,16 @@
   text-align: left;
   font-size: 2.3rem;
   margin-top: 0;
+  span {
+    display: inline;
+    @include av-mq(lap-and-up) {
+      display: none;
+    }
+  }
 }
 
 .we-are__body {
+  font-size: 18px;
   margin-top: 30px;
   text-align: left;
   color: #747474;
@@ -26,37 +40,57 @@
 
 .we-are__img {
   width: 100%;
-  @include breakpoint('tablet') {
+  @include av-mq(lap-and-up) {
     float: right;
     max-width: 700px;
   }
 }
 
 .we-are__media {
-  padding-top: 65px;
+  padding-top: 45px;
   justify-content: flex-end;
   max-width: 890px;
+  @include av-mq(lap-and-up) {
+    padding-top: 95px;
+  }
 }
 
 .we-are__services {
   width: 100%;
   padding: 35px;
   background: $mid-blue;
-  left: 0;
-  top: 420px;
-  position: absolute;
+  margin-top: 340px;
+  display: none;
   .button {
     text-align: left;
     float: left;
+    background: white;
+    color: $mid-blue;
+    margin-top: 30px;
   }
-  @include breakpoint('tablet') {
+  @include av-mq(lap-and-up) {
     width: 420px;
+    display: block;
+    position: absolute;
+  }
+  &--mob {
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin-top: -6px;
+    padding-bottom: 115px;
+    .button {
+      margin-top: 25px;
+    }
+    @include av-mq(lap-and-up) {
+      display: none;
+    }
   }
 }
 
 .we-are__body-cta {
   width: 100%;
-  @include breakpoint('tablet') {
+  @include av-mq(lap-and-up) {
     font-size: 1.3rem;
     text-align: left;
     color: white;

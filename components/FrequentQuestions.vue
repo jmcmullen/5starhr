@@ -1,7 +1,16 @@
 <template>
   <section class="frequent-questions">
     <div class="container">
-      <h1 class="frequent-questions__title">Frequently Asked Questions</h1>
+      <div class="row">
+        <div class="six columns">
+          <h5 class="our-services__subtitle">What We Do</h5>
+          <h2 class="our-services__title">We provide HR Services that will minimise risk and maximise sustainability</h2>
+        </div>
+        <div class="six columns">
+          <p class="our-services__body">
+            Whether you are having trouble finding, recruiting, retaining and motivating staff, struggling with employee expectations, navigating the minefield of compliance (IR and WHS), or looking to develop or maintain a market-leading business with outstanding Human Resources practices and sustainable strategies, Five Star HR will partner with your organisation to help you get the most out of your most valuable asset – your people.</p>
+        </div>
+      </div>
     </div>
     <div class="container">
       <div class="questions">
@@ -76,10 +85,11 @@
 
 <style lang="scss">
   .frequent-questions {
-    padding: 65px 0 165px;
+    padding: 65px 0 0;
   }
 
   .frequent-questions__title {
+    text-align: left;
     font-size: 2.3rem;
     width: 100%;
     display: block;
@@ -89,7 +99,6 @@
     user-select: none;
     justify-content: flex-start;
     text-align: left;
-    max-width: 700px;
     width: 100%;
     display: block;
   }

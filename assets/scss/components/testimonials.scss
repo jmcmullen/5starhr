@@ -1,0 +1,90 @@
+@import '../global';
+
+.testimonials {
+  padding: 64px 0;
+}
+
+.testimonials__subtitle {
+  @extend .copy-subtitle;
+}
+
+.testimonials__title {
+  @extend .copy-title;
+}
+
+.testimonials__body {
+  @extend .copy-body;
+  margin-top: 80px;
+}
+
+.testimonials__logo {
+  width: 100%;
+}
+
+.quote {
+  margin-top: 35px;
+  text-align: left;
+  p, cite {
+    @include av-mq(lap-and-up) {
+      margin-left: 40px;
+    }
+  }
+  cite {
+    display: block;
+    margin-top: 10px;
+  }
+  p {
+    border-left: 3px solid $light-blue;
+    padding-left: 5px;
+  }
+  &:before {
+    background-image: url('../../img/quote.svg');
+    background-size: contain;
+    height: 35px;
+    width: 35px;
+
+    content: ' ';
+    font-size: 72px;
+    position: absolute;
+    top: 0px;
+  }
+}
+
+.monial {
+  padding: 25px 20px 85px 20px;
+  &--odd {
+    background-color: $light-blue;
+  }
+}
+
+.monial__img-src {
+  @include av-mq(thumb) {
+    margin: auto;
+    display: block;
+    max-width: 100px;
+  }
+  @include av-mq(lap-and-up) {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+.monial__img--btm {
+  @include av-mq(thumb) {
+    display: none
+  }
+  @include av-mq(lap-and-up) {
+    &.monial__img--odd {
+      display: none;
+    }
+  }
+}
+
+.monial__img--top {
+  @include av-mq(lap-and-up) {
+    display: none;
+    &.monial__img--odd {
+      display: inline;
+    }
+  }
+}

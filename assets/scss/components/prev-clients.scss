@@ -1,0 +1,50 @@
+@import '../settings';
+
+.prev-clients {
+  margin: 25px 0 0;
+  padding: 65px 20px;
+  .button {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+}
+
+.prev-clients__title {
+  text-align: center;
+  color: $dark-blue;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+  letter-spacing: 2px;
+}
+
+.prev-clients__logo {
+  margin: 0 auto;
+  width: 100%;
+  padding: 25px;
+  @include av-mq(lap-and-up) {
+    &--cover {
+      margin-top: 10px;
+    }
+    &--one-edu {
+      width: 120px;
+    }
+    &--pos-estate {
+      margin-top: 20px;
+    }
+    &--crop-smart {
+      margin-top: 30px;
+    }
+    &--playgroup {
+      width: 100px;
+    }
+    &--paykel {
+      margin-top: 25px;
+    }
+  }
+}
+
+.prev-clients__testimonial {
+  margin-top: 25px;
+}

@@ -3,8 +3,8 @@
     <GlobalHeader/>
     <div class="wrapper">
       <PageBanner title="Our Services"/>
-      <OurServices/>
       <FrequentQuestions/>
+      <OurServices/>
       <FreeAnalysis/>
     </div>
   </div>

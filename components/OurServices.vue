@@ -1,55 +1,37 @@
 <template>
   <section class="our-services">
     <div class="container">
-      <div class="row">
-        <div class="six columns">
-          <h5 class="our-services__subtitle">What We Do</h5>
-          <h2 class="our-services__title">Really simple, really effective Human Resource strategies</h2>
-        </div>
-        <div class="six columns">
-          <p class="our-services__body">
-            Whether you are having trouble finding, recruiting, retaining and motivating staff, struggling with employee expectations, navigating the minefield of compliance (IR and WHS), or looking to develop or maintain a market-leading business with outstanding Human Resources practices and sustainable strategies, Five Star HR will partner with your organisation to help you get the most out of your most valuable asset – your people.</p>
-        </div>
-      </div>
+      <h1 class="our-services__title">We provide services that are relevant to your needs</h1>
     </div>
     <div class="container">
       <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Outsourced HR Consultants</h4>
+        <h4 class="our-services__service-desc">Adhoc HR Advice and Support</h4>
         <p class="our-services__service-body">
-          Weather you need an in-house HR Manager temporarily or longer-term we can answer your HR questions quickly and efficiently.</p>
+          From as little as $165 per month we can help your resolve your people issues simply and quickly.  We will provide phone and email support and answer all your employee related questions in relation to employment legislation and compliance and offer practical advice and solutions to all your staffing issues.
+        </p>
       </div>
       <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Policy Development</h4>
+        <h4 class="our-services__service-desc">Outsourced HR Manager & Coach</h4>
         <p class="our-services__service-body">
-          We can help you by supplying effective policies, defining legislation, outlining in-house processes and providing awareness, education and training.</p>
+          We can become your dedicated HR Manager (working onsite with your team on a regular scheduled basis – 1 day a week, month or fortnight) and look after all your HR responsibilities or we can offer a blended approach by coaching one of your existing staff members to take on the day-to-day HR activities, while we continue to provide strategic HR support.</p>
       </div>
       <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Employment & Industrial&nbsp;Relations</h4>
+        <h4 class="our-services__service-desc">HR Project Manager</h4>
         <p class="our-services__service-body">
-          We're here to help you better understand what has changed and how your business needs to adapt to stay compliant with Fair Work Legislation and Modern Awards.</p>
-      </div>
-      <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Recruitment & Retention</h4>
-        <p class="our-services__service-body">
-          Our HR specialists provide a full suite of recruitment tools including the development of remuneration/benefits packages to attract and retain key performers</p>
+          Perhaps you just need help on a short-term basis to manage a project, such as implement an online HRS or WHS system, support a restructure and redundancy process, or cover a long-term absence within your HR team.  We can provide additional short-term support and HR expertise within your business.</p>
       </div>
     </div>
-    <div class="container">
-      <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Workplace Health &&nbsp;Safety</h4>
-        <p class="our-services__service-body">Our consultants can review your safety processes to protect your business and ensure compliance with PCBU legislation.</p>
-      </div>
-      <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Mediation</h4>
-        <p class="our-services__service-body">We provide mediation assistance with workplace disputes to all the parties in the dispute to reach a mutually acceptable solution.</p>
-      </div>
-      <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Sponsorship and Visas</h4>
-        <p class="our-services__service-body">Sponsoring employees from overseas countries provides you with the skills you need to make your business productive in a tightening employment marketplace.</p>
-      </div>
-      <div class="our-services__service five columns">
-        <h4 class="our-services__service-desc">Coaching and Mentoring</h4>
-        <p class="our-services__service-body">Has your teamwork broken down? Do you have an otherwise-perfect staff member who needs some leadership training or management advice?</p>
+    <div class="container" style="justify-content: flex-start">
+      <div class="programs">
+        <p>The following Programs are our most popular services delivered to businesses, coupled with ongoing support and coaching:</p>
+
+        <ol>
+          <li class="four columns"><strong>HR Audits</strong> - using a planned approach we review your current HR practice, objectively identify issues, risks and opportunities within the business, and develop a 3, 6 or 12 month’ HR Plan for the business.</li>
+          <li class="four columns"><strong>HR Compliance Program</strong> - develop compliant employment contracts, new hire packs, onboarding and offboarding checklists, and HR policies and Procedures.</li>
+          <li class="four columns"><strong>HR Skills Coaching</strong> - to assist in building internal HR capability to manage day-to-day HR processes for administrators and managers.</li>
+          <li class="four columns"><strong>Online HRIS</strong> - implement a comprehensive, online core HRIS solution that streamlines, automates and simplifies HR processes (including recruitment, onboarding, offboarding, records management, leave management, performance management and training management)</li>
+          <li class="four columns"><strong>In-house Recruiter - </strong>Partner with the business to provide an end-to-end recruitment and selection service (without attracting expensive commissions).</li>
+        </ol>
       </div>
     </div>
   </section>
@@ -60,6 +42,9 @@
     &.container {
       justify-content: flex-start;
     }
+  }
+  .programs {
+    text-align: left;
   }
 
   .our-services {
@@ -77,6 +62,7 @@
     text-align: left;
     font-size: 2.3rem;
     margin-top: 0;
+    margin-bottom: 55px;
   }
 
   .our-services__body {
@@ -91,7 +77,7 @@
     width: 100%;
     padding: 10px 15px;
     margin-bottom: 45px;
-    height: 300px;
+    height: 350px;
     transition: background-color .3s ease-in;
     &:hover {
       background-color: darken(#f1f1f1, 5%);

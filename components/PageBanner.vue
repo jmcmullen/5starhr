@@ -6,22 +6,10 @@
   </section>
 </template>
 
-<style lang="scss">
-  .page-banner {
-    background-color: #F1F6FB;
-    .container {
-      justify-content: flex-start;
-    }
-  }
-  .page-banner__title {
-    font-size: 2rem;
-    padding: 45px 0;
-    margin: 0;
-  }
-</style>
+<style lang="scss" src="../assets/scss/components/page-banner.scss"/>
 
 <script>
-  export default {
-    props: ['title']
-  }
+export default {
+  props: ['title']
+}
 </script>

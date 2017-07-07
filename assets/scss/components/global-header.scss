@@ -3,20 +3,19 @@
 $dark-blue: #0481ac;
 
 .global-header {
-  display: flex;
-  justify-content: center;
   width: 100%;
   height: 80px;
-  box-shadow: 0 0 2px #747474;
   position: fixed;
   z-index: 1000;
   background-color: $white;
-  .container {
-    display: flex;
-    justify-content: space-between;
-    &:after {
-      content: none;
-    }
+  border-bottom: 1px solid #e0e0e0;
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity .5s;
+  }
+  .fade-enter,
+  .fade-leave-to {
+    opacity: 0;
   }
 }
 
@@ -27,18 +26,34 @@ $dark-blue: #0481ac;
 }
 
 .branding__img {
-  max-width: 160px;
-  margin-top: 6px;
+  width: 145px;
+  margin-top: 0;
+  float: left;
+  margin-left: 10px;
 }
 
 .main-menu {
-  margin-top: 5px;
+  margin-top: 80px;
+  display: block;
+  position: fixed;
+  width: 100%;
+  @include av-mq(lap-and-up) {
+    display: inline !important;
+    float: right;
+    margin-top: 25px;
+    width: initial;
+    position: relative;
+  }
 }
 
 .main-menu__nav {
-  display: none;
-  @include breakpoint('tablet') {
-    display: block;
+  height: 100vh;
+  padding-top: 50px;
+  background: white;
+  @include av-mq(lap-and-up) {
+    display: inline;
+    height: initial;
+    padding-top: 0;
     .button-primary {
       margin-left: 15px;
     }
@@ -46,24 +61,59 @@ $dark-blue: #0481ac;
 }
 
 .main-menu__link {
-  padding: 0 15px;
+  width: 100%;
+  color: #747474;
+  display: block;
+  background-color: white;
+  padding: 20px;
+  text-align: center;
   text-decoration: none;
-  color: $dark-blue;
-  vertical-align: text-bottom;
-  &.active {
-    font-weight: 600;
+  font-size: 24px;
+  @include av-mq(lap-and-up) {
+    display: inline;
+    font-size: 18px;
+    padding: 0 15px;
+    text-decoration: none;
+    color: $dark-blue;
+    vertical-align: text-bottom;
+    &.active {
+      font-weight: 600;
+    }
   }
 }
 
 .main-menu__icon {
-  width: 40px;
-  margin-top: -15px;
-  margin-left: 20px;
-  padding: 0 10px;
+  display: none;
+  @include av-mq(lap-and-up) {
+    width: 40px;
+    display: inline-block;
+    margin-left: 20px;
+    padding: 0 10px;
+  }
 }
 
 .main-menu__phone {
+  font-size: 24px;
+  line-height: 2;
   color: black;
   text-decoration: none;
-  vertical-align: text-bottom;
+  text-align: center;
+  display: block;
+  margin: 45px auto 0 auto;
+  @include av-mq(lap-and-up) {
+    display: inline;
+    font-size: 18px;
+  }
+}
+
+.icon-menu {
+  float: right;
+  display: block;
+  margin: 24px 20px 0 0;
+  &--close {
+    width: 30px;
+  }
+  @include av-mq(lap-and-up) {
+    display: none;
+  }
 }

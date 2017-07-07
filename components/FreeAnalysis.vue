@@ -1,42 +1,24 @@
 <template>
-  <section class="free-analysis">
+  <section class="free-analysis" v-bind:class="{ 'free-analysis--light': theme == 'light' }">
     <div class="container">
-      <div class="seven columns">
-        <h2 class="free-analysis__title">Get a free analysis of your HR requirements</h2>
-        <p class="free-analysis__body">In just one hour, we can help review your current HR policies, procedures, documentation and assess any areas of risk and propose solutions</p>
-      </div>
-      <div class="four columns">
-        <a href="/contact" class="button">Leave your details</a>
+      <div class="grid">
+        <div class="grid__cell 3/4--lap-and-up">
+          <h2 class="free-analysis__title">Phone today for a free HR Health Check</h2>
+          <p class="free-analysis__body">In just one hour, we can help review your current HR policies, procedures, documentation and assess any areas of risk and propose solutions</p>
+        </div>
+        <div class="grid__cell 1/4--lap-and-up">
+          <a href="/contact-us" class="button">0422 634 359</a>
+        </div>
       </div>
     </div>
   </section>
 </template>
 
-<style lang="scss">
-  .free-analysis {
-    background-color: #1cb6e6;
-    .container {
-      padding: 35px 0;
-    }
-    .button {
-      background-color: white;
-      border-color: #1cb6e6;
-      color: #1cb6e6;
-    }
-  }
-  .free-analysis__title {
-    font-size: 1.3rem;
-    color: white;
-    text-align: left;
-    margin-bottom: 0;
-  }
-  .free-analysis__body {
-    margin-top: 0;
-    color: white;
-    text-align: left;
-  }
-</style>
-
 <script>
-  export default {}
+export default {
+  props: ['theme']
+}
 </script>
+
+<style lang="scss" src="../assets/scss/components/free-analysis.scss" scoped />
+
