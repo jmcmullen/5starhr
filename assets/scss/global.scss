@@ -58,3 +58,14 @@ input[type="submit"],
 .clearfix {
   clear: both;
 }
+
+.full-width {
+  width: 100%;
+}
+
+.article__img {
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-top: 15px;
+}

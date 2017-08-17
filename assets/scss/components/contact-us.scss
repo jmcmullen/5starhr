@@ -1,0 +1,24 @@
+.contact__form {
+  margin-top: 50px;
+  input,
+  textarea {
+    padding: 10px;
+    display: block;
+    margin: 10px 0  ;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.contact__call .contact__title, {
+  text-align: center;
+  margin-top: 200px;
+}
+.contact__call .contact__body, {
+  text-align: center;
+}
+
+.contact__sections {
+  padding-bottom: 80px;
+}

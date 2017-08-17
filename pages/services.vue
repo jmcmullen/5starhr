@@ -3,7 +3,7 @@
     <GlobalHeader/>
     <div class="wrapper">
       <PageBanner title="Our Services"/>
-      <FrequentQuestions/>
+      <!--<FrequentQuestions/>-->
       <OurServices/>
       <FreeAnalysis/>
     </div>
