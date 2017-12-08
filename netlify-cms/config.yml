@@ -11,7 +11,7 @@ collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "content/posts"
-    slug: "{{slug}}"
+    slug: "hr-advice/{{slug}}"
     create: true # Allow users to create new documents in this collection
     fields: # The fields each document in this collection have
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}
@@ -20,3 +20,31 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Body", name: "body", widget: "markdown"}
     meta:
       - {label: "SEO Description", name: "description", widget: "text"}
+  - label: "Pages"
+  name: "pages"
+  files:
+    - label: "Home Page"
+      name: "home"
+      file: "content/pages/home.json"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Intro, name: intro, widget: markdown}
+        - label: Features
+          name: features
+          widget: list
+          fields:
+            - {label: Feature 1, name: name, widget: string}
+            - {label: Feature 2, name: position, widget: string}
+            - {label: Feature 2, name: photo, widget: string}
+    - label: "About Page"
+      name: "about"
+      file: "content/about.json"
+      fields:
+        - {label: Title, name: title, widget: string}
+        - {label: Intro, name: intro, widget: markdown}
+        - label: Locations
+          name: locations
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Address, name: address, widget: string}
