@@ -32,7 +32,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         fields:
           - {label: "Title", name: "title", widget: "string"}
-          - {label: "Intro", name: "intro", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "markdown"}
           - label: "Features"
             name: "features"
             widget: "object"
@@ -58,6 +58,33 @@ collections: # A list of collections the CMS should be able to edit
             fields:
               - {label: Image, name: image, widget: image}
           - {label: "Button", name: "intro", widget: "string"}
+      - label: "Who We Are Section"
+        name: "whoweare"
+        widget: "object"
+        fields:
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Caption", name: "caption", widget: "string"}
+          - {label: "Button Text", name: "button", widget: "string"}
+          - {label: "Button URL", name: "button", widget: "string"}
+      - label: "How We Work Section"
+        name: "howwework"
+        widget: "object"
+        fields:
+          - {label: "Subtitle", name: "subtitle", widget: "string"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+          - {label: "Button Text", name: "button", widget: "string"}
+          - {label: "Button URL", name: "button", widget: "string"}
+          - label: Features
+            name: features
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+          - {label: "Image", name: "image", widget: "image"}
+          - {label: "Image Caption", name: "caption", widget: "string"}
     - label: "About Page"
       name: "about"
       file: "content/pages/about.yml"
