@@ -68,7 +68,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Caption", name: "caption", widget: "string"}
           - {label: "Button Text", name: "button", widget: "string"}
-          - {label: "Button URL", name: "button", widget: "string"}
+          - {label: "Button URL", name: "url", widget: "string"}
       - label: "How We Work Section"
         name: "howwework"
         widget: "object"
@@ -77,7 +77,7 @@ collections: # A list of collections the CMS should be able to edit
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Button Text", name: "button", widget: "string"}
-          - {label: "Button URL", name: "button", widget: "string"}
+          - {label: "Button URL", name: "url", widget: "string"}
           - label: Features
             name: features
             widget: list
