@@ -31,7 +31,7 @@ collections: # A list of collections the CMS should be able to edit
         name: "hero"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "markdown"}
           - {label: "Intro", name: "intro", widget: "markdown"}
           - label: "Features"
             name: "features"
@@ -51,12 +51,13 @@ collections: # A list of collections the CMS should be able to edit
         name: "trustedby"
         widget: "object"
         fields:
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "markdown"}
           - label: Logos
             name: logos
             widget: list
             fields:
               - {label: Image, name: image, widget: image}
+              - {label: Alt Text, name: alt, widget: string}
           - {label: "Button", name: "button", widget: "string"}
           - {label: "Button URL", name: "url", widget: "string"}
       - label: "Who We Are Section"
@@ -64,7 +65,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         fields:
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "markdown"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Image", name: "image", widget: "image"}
           - {label: "Image Caption", name: "caption", widget: "string"}
@@ -75,7 +76,7 @@ collections: # A list of collections the CMS should be able to edit
         widget: "object"
         fields:
           - {label: "Subtitle", name: "subtitle", widget: "string"}
-          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Title", name: "title", widget: "markdown"}
           - {label: "Body", name: "body", widget: "markdown"}
           - {label: "Button Text", name: "button", widget: "string"}
           - {label: "Button URL", name: "url", widget: "string"}
@@ -91,7 +92,7 @@ collections: # A list of collections the CMS should be able to edit
       file: "content/pages/about.yml"
       fields:
         - {label: Subtitle, name: subtitle, widget: string}
-        - {label: Title, name: title, widget: string}
+        - {label: Title, name: title, widget: markdown}
         - {label: Body, name: body, widget: markdown}
         - {label: "Image", name: "image", widget: "image"}
     - label: "Services Page"
@@ -99,12 +100,12 @@ collections: # A list of collections the CMS should be able to edit
       file: "content/pages/services.yml"
       fields:
         - {label: Subtitle, name: subtitle, widget: string}
-        - {label: Title, name: title, widget: string}
+        - {label: Title, name: title, widget: markdown}
         - {label: Body, name: body, widget: markdown}
         - label: "Featured Services"
           name: "services"
           widget: list
           fields:
-            - {label: Title, name: title, widget: string}
+            - {label: Title, name: title, widget: markdown}
             - {label: Body, name: body, widget: markdown}
         - {label: Other Services, name: other, widget: markdown}

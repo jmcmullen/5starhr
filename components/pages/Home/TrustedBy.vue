@@ -1,14 +1,14 @@
 <template>
   <section class="prev-clients">
-    <h1 class="prev-clients__title">Trusted By</h1>
+    <h1 class="prev-clients__title">{{text.title}}</h1>
     <div class="container">
       <div class="grid">
-        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
-          <img src="~/assets/images/1-cover-logo.jpg"
+        <div class="grid__cell 1/2--thumb 1/6--lap-and-up" v-for="(logo, key) in text.logos" :key="key">
+          <img v-bind:src="imgURL(logo.image)"
             alt="1 Cover Logo"
             class="prev-clients__logo prev-clients__logo--cover">
         </div>
-        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
+        <!-- <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
           <img src="~/assets/images/paykel-logo.png"
           alt="Paykel Logo"
           class="prev-clients__logo prev-clients__logo--paykel">
@@ -32,7 +32,7 @@
           <img src="~/assets/images/one-education-logo.png"
           alt="One Education Logo"
           class="prev-clients__logo prev-clients__logo--one-edu">
-        </div>
+        </div> -->
       </div>
     </div>
     <div class="container">
@@ -47,8 +47,17 @@
 
 <script>
 export default {
-  data() {
-    return {};
+  props: {
+    text: {
+      type: Object,
+      required: true,
+    },
+  },
+  methods: {
+    imgURL(image) {
+      const remove = '/static';
+      return image.substr(remove.length);
+    },
   },
 };
 </script>
