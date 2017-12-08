@@ -10,17 +10,18 @@
 </template>
 
 <script>
-  import GlobalHeader from '~components/GlobalHeader.vue'
-  import PageBanner from '~components/PageBanner.vue'
-  import AboutUs from '~components/AboutUs.vue'
-  import FreeAnalysis from '~components/FreeAnalysis.vue'
+import GlobalHeader from '~/components/partials/GlobalHeader';
+import PageBanner from '~/components/partials/PageBanner';
+import AboutUs from '~/components/pages/About/OurMission';
+import FreeAnalysis from '~/components/commons/FreeAnalysis';
 
-  export default {
-    components: {
-      GlobalHeader,
-      PageBanner,
-      AboutUs,
-      FreeAnalysis
-    }
-  }
+export default {
+  layout: 'page',
+  components: {
+    GlobalHeader,
+    PageBanner,
+    AboutUs,
+    FreeAnalysis,
+  },
+};
 </script>

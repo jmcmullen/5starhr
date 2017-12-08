@@ -12,21 +12,22 @@
 </template>
 
 <script>
-import GlobalHeader from '~components/GlobalHeader.vue'
-import FreeConsultation from '~components/FreeConsultation.vue'
-import PrevClients from '~components/PrevClients.vue'
-import WhoWeAre from '~components/WhoWeAre.vue'
-import HowWeWork from '~components/HowWeWork.vue'
-import FreeAnalysis from '~components/FreeAnalysis.vue'
+import GlobalHeader from '~/components/partials/GlobalHeader';
+import FreeConsultation from '~/components/pages/Home/FreeConsultation';
+import PrevClients from '~/components/pages/Home/TrustedBy';
+import WhoWeAre from '~/components/pages/Home/WhoWeAre';
+import HowWeWork from '~/components/pages/Home/HowWeWork';
+import FreeAnalysis from '~/components/commons/FreeAnalysis';
 
 export default {
+  layout: 'page',
   components: {
     GlobalHeader,
     FreeConsultation,
     PrevClients,
     WhoWeAre,
     HowWeWork,
-    FreeAnalysis
-  }
-}
+    FreeAnalysis,
+  },
+};
 </script>

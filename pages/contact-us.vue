@@ -33,18 +33,44 @@
 </template>
 
 <script>
-  import GlobalHeader from '~components/GlobalHeader.vue'
-  import PageBanner from '~components/PageBanner.vue'
-  import FreeAnalysis from '~components/FreeAnalysis.vue'
+import GlobalHeader from '~/components/partials/GlobalHeader';
+import PageBanner from '~/components/partials/PageBanner';
+import FreeAnalysis from '~/components/commons/FreeAnalysis';
 
-  export default {
-    components: {
-      GlobalHeader,
-      PageBanner,
-      FreeAnalysis
-    }
-  }
+export default {
+  layout: 'page',
+  components: {
+    GlobalHeader,
+    PageBanner,
+    FreeAnalysis,
+  },
+};
 </script>
 
-<style lang="scss" src="../assets/scss/components/contact-us.scss" />
+<style lang="scss" scoped>
+.contact__form {
+  margin-top: 50px;
+  input,
+  textarea {
+    padding: 12px;
+    display: block;
+    margin: 15px 0;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #e5e5e5;
+  }
+}
+
+.contact__call .contact__title {
+  text-align: center;
+  margin-top: 200px;
+}
+.contact__call .contact__body {
+  text-align: center;
+}
+
+.contact__sections {
+  padding-bottom: 80px;
+}
+</style>
 

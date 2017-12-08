@@ -1,0 +1,145 @@
+<template>
+  <section class="we-work">
+    <div class="container">
+      <div class="grid">
+        <div class="grid__cell 1/2--lap-and-up">
+          <h5 class="we-are__subtitle">How we work with you</h5>
+          <h2 class="we-are__title">Focus on your mission
+            <br>
+            <span> - </span>We'll focus on your HR</h2>
+          <p class="we-are__body">We can be engaged as an HR consultant to deliver a single project, such as a new employee management system designed to automate all your employee record-keeping or through to acting as your outsourced HR Manager on a retained basis. We can also just help out on an ad hoc basis by providing advice and support as required in relation to any HR issue – whether its basic HR advice on employee entitlements and Award interpretation to more complex situations involving restructures, redundancies or unfair dismissal claims. </p>
+          <a href="/contact" class="button button-primary">
+            Book your free 1 hour consultation
+          </a>
+        </div>
+        <div class="grid__cell 1/2--lap-and-up we-work__service-list">
+          <div class="we-work__service">
+            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
+            <h3 class="we-work__service-title grid__cell 3/4">Measurement and Planning</h3>
+          </div>
+          <div class="we-work__service">
+            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
+            <h3 class="we-work__service-title grid__cell 3/4">HR Processes and Systems</h3>
+          </div>
+          <div class="we-work__service">
+            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
+            <h3 class="we-work__service-title grid__cell 3/4">Governance and Compliance</h3>
+          </div>
+          <div class="we-work__service">
+            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
+            <h3 class="we-work__service-title grid__cell 3/4">Performance Management</h3>
+          </div>
+          <div class="we-work__service">
+            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
+            <h3 class="we-work__service-title grid__cell 3/4">Workplace Improvement</h3>
+          </div>
+          <div class="we-work__service">
+            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
+            <h3 class="we-work__service-title grid__cell 3/4">and much more...</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="we-work__media container container--mob">
+      <img src="~/assets/images/small-business.jpg" alt="" class="we-work__img-cta">
+      <div class="we-work__services">
+        <h2 class="we-work__title-cta">Evidence-based methodology</h2>
+        <p class="we-work__body-cta">Through the HR Coach Research Institute, we have a range of HR Consulting services backed by solid and ongoing research, designed to deliver quality, measurable results for business.</p>
+      </div>
+    </div>
+    <div class="clearfix"></div>
+  </section>
+</template>
+
+<script>
+export default {};
+</script>
+
+<style lang="scss" scoped>
+.we-work {
+  margin-top: 25px;
+  padding: 35px 0 0;
+  .button {
+    float: left;
+    margin-top: 25px;
+  }
+  .container {
+    padding: 0 20px;
+    &--mob {
+      padding: 0;
+    }
+  }
+  @include av-mq(lap-and-up) {
+    padding: 65px 0 65px 0;
+  }
+}
+
+.we-work__img {
+  display: inline-block;
+  max-width: 50px;
+}
+
+.we-work__service-list {
+  &.grid__cell {
+    margin-top: 25px;
+  }
+}
+
+.we-work__service {
+  margin: 15px 0 15px 15px;
+  text-align: left;
+  @include av-mq(lap-and-up) {
+    margin: 15px 0 15px 100px;
+  }
+}
+
+.we-work__service-title {
+  display: inline-block;
+  font-size: 1.4rem;
+  vertical-align: super;
+  @include av-mq(lap-and-up) {
+    margin-bottom: 10px;
+  }
+}
+
+.we-work__title-cta {
+  color: $white;
+  font-size: 2.2rem;
+  text-align: left;
+}
+
+.we-work__media {
+  padding-top: 65px;
+  max-width: 890px;
+}
+
+.we-work__services {
+  margin-top: -7px;
+  padding: 35px;
+  background: #1cb6e6;
+  @include av-mq(lap-and-up) {
+    width: 420px;
+    margin-top: 310px;
+    margin-left: 490px;
+    position: absolute;
+  }
+}
+
+.we-work__body-cta {
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  margin-top: 10px;
+}
+
+.we-work__img-cta {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 45px;
+  @include av-mq(lap-and-up) {
+    float: left;
+    margin-top: 100px;
+    margin-bottom: 95px;
+  }
+}
+</style>

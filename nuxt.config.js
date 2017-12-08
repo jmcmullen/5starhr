@@ -1,49 +1,89 @@
+const { resolve } = require('path');
+
 module.exports = {
   /*
   ** Headers of the page
   */
   head: {
-    title: "Five Star HR",
+    title: 'fivestarhr',
     meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "Nuxt.js project" }
-    ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { charset: 'utf-8' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
-        rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Nunito:300,400,700,900"
-      }
-    ]
+        hid: 'description',
+        name: 'description',
+        content: 'Five Start HR Website',
+      },
+    ],
+    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css?family=Nunito:300,400,700,900',
+      },
+    ],
   },
   /*
-  ** Customize the progress-bar color
+  ** Customize the progress bar color
   */
-  loading: { color: "#3B8070" },
+  loading: { color: '#3B8070' },
+  /*
+  ** Inject global css
+  */
+  css: ['normalize.css', '@/assets/styles/theme.scss'],
+  modules: ['nuxt-sass-resources-loader', 'nuxt-netlify-cms', 'nuxtent'],
+  sassResources: [
+    resolve(__dirname, 'assets/styles/vendor/avalanche.scss'),
+    resolve(__dirname, 'assets/styles/settings/variables.scss'),
+  ],
   /*
   ** Build configuration
   */
   build: {
+    loaders: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000, // 1KO
+          name: 'img/[name].[hash:7].[ext]',
+        },
+      },
+      {
+        test: /\.(woff2?|eot|ttf|otf)(\?.*)?$/,
+        loader: 'url-loader',
+        query: {
+          limit: 1000, // 1 KO
+          name: 'fonts/[name].[hash:7].[ext]',
+        },
+      },
+    ],
     /*
-    ** Run ESLINT on save
+    ** Run ESLint on save
     */
+    extractCSS: true,
+    vendor: ['babel-polyfill'],
     extend(config, ctx) {
-      if (ctx.isClient) {
+      if (ctx.dev && ctx.isClient) {
         config.module.rules.push({
-          enforce: "pre",
+          enforce: 'pre',
           test: /\.(js|vue)$/,
-          loader: "eslint-loader",
-          exclude: /(node_modules)/
+          loader: 'eslint-loader',
+          exclude: /(node_modules)/,
         });
       }
-    }
+    },
   },
-  env: {
-    baseUrl: "http://localhost:9000"
+  /*
+  ** Netlify CMS
+  */
+  nuxtent: {
+    content: {
+      permalink: ':slug',
+      page: '/_post',
+      isPost: false,
+      generate: ['get', 'getAll'],
+    },
   },
-  css: [
-    "~assets/scss/vendor/normalize.css",
-    { src: "~assets/scss/global.scss", lang: "scss" }
-  ]
 };

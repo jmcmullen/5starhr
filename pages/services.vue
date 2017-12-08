@@ -11,11 +11,11 @@
 </template>
 
 <script>
-import GlobalHeader from '~components/GlobalHeader'
-import PageBanner from '~components/PageBanner'
-import OurServices from '~components/OurServices'
-import FreeAnalysis from '~components/FreeAnalysis'
-import FrequentQuestions from '~components/FrequentQuestions'
+import GlobalHeader from '~/components/partials/GlobalHeader';
+import PageBanner from '~/components/partials/PageBanner';
+import OurServices from '~/components/pages/Services/OurServices';
+import FreeAnalysis from '~/components/commons/FreeAnalysis';
+import FrequentQuestions from '~/components/pages/Services/Faq';
 
 export default {
   components: {
@@ -23,9 +23,9 @@ export default {
     PageBanner,
     OurServices,
     FrequentQuestions,
-    FreeAnalysis
-  }
-}
+    FreeAnalysis,
+  },
+};
 </script>
 
 <style>
