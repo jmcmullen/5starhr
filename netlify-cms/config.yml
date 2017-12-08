@@ -27,22 +27,37 @@ collections: # A list of collections the CMS should be able to edit
       name: "home"
       file: "content/pages/home.yml"
       fields:
-        - {label: Title, name: title, widget: string}
-        - {label: Intro, name: intro, widget: markdown}
-        - label: Features
-          name: Email Capture
-          widget: list
-          fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Email, name: email, widget: string}
-            - {label: Button, name: button, widget: string}
-        - label: Features
-          name: features
-          widget: list
-          fields:
-            - {label: Feature 1, name: name, widget: string}
-            - {label: Feature 2, name: position, widget: string}
-            - {label: Feature 2, name: photo, widget: string}
+      - label: "Hero Section"
+        name: "hero"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Intro", name: "intro", widget: "string"}
+          - label: "Features"
+            name: "features"
+            widget: "object"
+            fields:
+            - {label: "Feature 1", name: "one", widget: "string"}
+            - {label: "Feature 2", name: "two", widget: "string"}
+            - {label: "Feature 3", name: "three", widget: "string"}
+          - label: "Email Form"
+            name: "form"
+            widget: "object"
+            fields:
+            - {label: "Name Placeholder", name: "name", widget: "string"}
+            - {label: "Email Placeholder", name: "email", widget: "string"}
+            - {label: "Button Text", name: "button", widget: "string"}
+      - label: "Trusted By Section"
+        name: "trustedby"
+        widget: "object"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - label: Logos
+            name: logos
+            widget: list
+            fields:
+              - {label: Image, name: image, widget: image}
+          - {label: "Button", name: "intro", widget: "string"}
     - label: "About Page"
       name: "about"
       file: "content/pages/about.yml"
