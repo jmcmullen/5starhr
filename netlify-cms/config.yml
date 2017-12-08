@@ -57,7 +57,8 @@ collections: # A list of collections the CMS should be able to edit
             widget: list
             fields:
               - {label: Image, name: image, widget: image}
-          - {label: "Button", name: "intro", widget: "string"}
+          - {label: "Button", name: "button", widget: "string"}
+          - {label: "Button URL", name: "url", widget: "string"}
       - label: "Who We Are Section"
         name: "whoweare"
         widget: "object"
@@ -89,11 +90,22 @@ collections: # A list of collections the CMS should be able to edit
       name: "about"
       file: "content/pages/about.yml"
       fields:
+        - {label: Subtitle, name: subtitle, widget: string}
         - {label: Title, name: title, widget: string}
-        - {label: Intro, name: intro, widget: markdown}
-        - label: Locations
-          name: locations
+        - {label: Body, name: body, widget: markdown}
+        - {label: "Image", name: "image", widget: "image"}
+    - label: "Services Page"
+      name: "services"
+      file: "content/pages/services.yml"
+      fields:
+        - {label: Subtitle, name: subtitle, widget: string}
+        - {label: Title, name: title, widget: string}
+        - {label: Body, name: body, widget: markdown}
+        - {label: "Image", name: "image", widget: "image"}
+        - label: "Featured Services"
+          name: "services"
           widget: list
           fields:
-            - {label: Name, name: name, widget: string}
-            - {label: Address, name: address, widget: string}
+            - {label: Title, name: title, widget: string}
+            - {label: Body, name: body, widget: markdown}
+        - {label: Other Services, name: other, widget: markdown}
