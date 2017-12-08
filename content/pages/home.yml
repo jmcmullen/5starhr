@@ -13,13 +13,24 @@ hero:
 
 
     – your people.
-  title: FREE 1 Hour HR Consultation
+  title: '**FREE** 1 Hour HR Consultation'
 trustedby:
-  intro: Read testimonials from our clients
+  button: Read testimonials from our clients
   logos:
-    - image: /static/uploads/1-cover-logo.jpg
-    - image: /static/uploads/paykel-logo.png
+    - alt: 1 Cover
+      image: /static/uploads/1-cover-logo.jpg
+    - alt: Paykel
+      image: /static/uploads/paykel-logo.png
+    - alt: Positive Real Estate
+      image: /static/uploads/positive-real-estate-logo.jpg
+    - alt: Crop Smart
+      image: /static/uploads/crop-smart-logo.jpg
+    - alt: Playgroup NSW
+      image: /static/uploads/playgroup-nsw-logo.jpg
+    - alt: One Education
+      image: /static/uploads/one-education-logo.png
   title: Trusted By
+  url: /testimonials
 whoweare:
   body: >-
     With access to the largest network of specialist HR resources in Australia,
