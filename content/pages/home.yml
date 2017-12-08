@@ -15,6 +15,7 @@ hero:
     – your people.
   title: FREE 1 Hour HR Consultation
 trustedby:
+  intro: Read testimonials from our clients
   logos:
     - image: /static/uploads/1-cover-logo.jpg
     - image: /static/uploads/paykel-logo.png
@@ -26,13 +27,32 @@ whoweare:
     medium businesses to put in place really simple, really effective Human
     Resource strategies that will save you money, minimise your risk and
     increase productivity.
-  button: ''
+  button: See what we offer
   caption: >-
     Our services are tailored specifically to the needs of small-medium
     businesses.
   subtitle: Who we are
   title: Five Star HR is an independent Sydney HR Consulting and Coaching practice.
+  url: /services
 howwework:
-  body: tet
-  subtitle: test
-  title: test
+  body: >-
+    We can be engaged as an HR consultant to deliver a single project, such as a
+    new employee management system designed to automate all your employee
+    record-keeping or through to acting as your outsourced HR Manager on a
+    retained basis. We can also just help out on an ad hoc basis by providing
+    advice and support as required in relation to any HR issue – whether its
+    basic HR advice on employee entitlements and Award interpretation to more
+    complex situations involving restructures, redundancies or unfair dismissal
+    claims.
+  button: Book your free 1 hour consultation
+  caption: Evidence-based methodology
+  features:
+    - name: Measurement and Planning
+    - name: HR Processes and Systems
+    - name: Governance and Compliance
+    - name: Performance Management
+    - name: Workplace Improvement
+    - name: and much more...
+  subtitle: How we work with you
+  title: Focus on your mission  - We'll focus on your HR
+  url: /contact
