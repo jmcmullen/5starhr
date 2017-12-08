@@ -1,7 +1,5 @@
 backend:
-  name: github
-  repo: jmcmullen/5starhr
-  url: http://vuecmsify.me
+  name: git-gateway
 
 media_folder: "static/uploads"
 
