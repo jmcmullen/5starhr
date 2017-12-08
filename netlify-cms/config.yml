@@ -101,7 +101,6 @@ collections: # A list of collections the CMS should be able to edit
         - {label: Subtitle, name: subtitle, widget: string}
         - {label: Title, name: title, widget: string}
         - {label: Body, name: body, widget: markdown}
-        - {label: "Image", name: "image", widget: "image"}
         - label: "Featured Services"
           name: "services"
           widget: list
