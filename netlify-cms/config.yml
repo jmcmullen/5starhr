@@ -25,7 +25,7 @@ collections: # A list of collections the CMS should be able to edit
     files:
     - label: "Home Page"
       name: "home"
-      file: "content/pages/home.json"
+      file: "content/pages/home.yml"
       fields:
         - {label: Title, name: title, widget: string}
         - {label: Intro, name: intro, widget: markdown}
@@ -45,7 +45,7 @@ collections: # A list of collections the CMS should be able to edit
             - {label: Feature 2, name: photo, widget: string}
     - label: "About Page"
       name: "about"
-      file: "content/about.json"
+      file: "content/pages/about.yml"
       fields:
         - {label: Title, name: title, widget: string}
         - {label: Intro, name: intro, widget: markdown}

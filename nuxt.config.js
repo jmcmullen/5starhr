@@ -84,11 +84,25 @@ module.exports = {
   ** Netlify CMS
   */
   nuxtent: {
-    content: {
-      permalink: ':slug',
-      page: '/_post',
-      isPost: false,
-      generate: ['get', 'getAll'],
-    },
+    content: [
+      [
+        'posts',
+        {
+          page: '/posts/_slug',
+          permalink: '/hr-advice/:slug',
+          generate: ['get', 'getAll'],
+          isPost: false,
+        },
+      ],
+      [
+        'pages',
+        {
+          page: '/_slug',
+          permalink: '/:slug',
+          isPost: false,
+          generate: ['get', 'getAll'],
+        },
+      ],
+    ],
   },
 };
