@@ -32,7 +32,7 @@ export default {
         { href: '/about-us', title: 'About Us' },
         { href: '/services', title: 'Services' },
         // {href: '#', title: 'Our Clients'},
-        // {href: '#', title: 'HR Advice'},
+        { href: '/hr-advice', title: 'Free Advice' },
         { href: '/contact-us', title: 'Contact Us' }
       ]
     }

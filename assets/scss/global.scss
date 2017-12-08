@@ -37,6 +37,7 @@ input[type="submit"],
   text-decoration: none;
   background-color: darken($grey, 30%);
   border-color: darken($grey, 30%);
+  border-style: solid;
   color: white;
   transition: background-color .3s ease-in;
   &.button-primary {
