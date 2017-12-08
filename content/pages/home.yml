@@ -13,7 +13,10 @@ hero:
 
 
     – your people.
-  title: '**FREE** 1 Hour HR Consultation'
+  title: |-
+    **FREE** 1 Hour 
+
+    HR Consultation
 trustedby:
   button: Read testimonials from our clients
   logos:
