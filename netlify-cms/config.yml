@@ -1,5 +1,9 @@
 backend:
   name: git-gateway
+backend:
+  name: github
+  repo: jmcmullen/5starhr
+  url: https://staging.5starhr.com
 
 media_folder: "static/uploads"
 
