@@ -30,6 +30,13 @@ collections: # A list of collections the CMS should be able to edit
         - {label: Title, name: title, widget: string}
         - {label: Intro, name: intro, widget: markdown}
         - label: Features
+          name: Email Capture
+          widget: list
+          fields:
+            - {label: Name, name: name, widget: string}
+            - {label: Email, name: email, widget: string}
+            - {label: Button, name: button, widget: string}
+        - label: Features
           name: features
           widget: list
           fields:
