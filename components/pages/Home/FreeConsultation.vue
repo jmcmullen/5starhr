@@ -26,18 +26,11 @@
 </template>
 
 <script>
-import MarkdownIt from 'markdown-it';
-
 export default {
   props: {
     text: {
       type: Object,
       required: true,
-    },
-  },
-  methods: {
-    md(message) {
-      return MarkdownIt().render(message);
     },
   },
 };
