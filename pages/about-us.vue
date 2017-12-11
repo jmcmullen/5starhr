@@ -3,7 +3,7 @@
     <GlobalHeader/>
     <div class="wrapper">
       <PageBanner title="About Us"/>
-      <AboutUs />
+      <OurMission :text="text.body" />
       <FreeAnalysis />
     </div>
   </div>
@@ -12,7 +12,7 @@
 <script>
 import GlobalHeader from '~/components/partials/GlobalHeader';
 import PageBanner from '~/components/partials/PageBanner';
-import AboutUs from '~/components/pages/About/OurMission';
+import OurMission from '~/components/pages/About/OurMission';
 import FreeAnalysis from '~/components/commons/FreeAnalysis';
 
 export default {
@@ -20,8 +20,11 @@ export default {
   components: {
     GlobalHeader,
     PageBanner,
-    AboutUs,
+    OurMission,
     FreeAnalysis,
   },
+  asyncData: async ({ app }) => ({
+    text: await app.$content('/pages').get('/about'),
+  }),
 };
 </script>
