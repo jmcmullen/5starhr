@@ -3,7 +3,7 @@
     <div class="container">
       <div class="grid">
         <div class="free-consult__services grid__cell 1/2--lap-and-up">
-          <h1 class="free-consult__title">{{text.title}}</h1>
+          <h1 class="free-consult__title" v-html="md(text.title)"></h1>
           <form class="free-consult__form">
             <fieldset>
               <input type="text" class="free-consult__input" id="name" :placeholder="text.form.name">
@@ -13,8 +13,7 @@
           </form>
         </div>
         <div class="free-consult__features grid__cell 1/2--lap-and-up">
-          <h2 class="free-consult__subtitle">
-            {{text.intro}}</h2>
+          <h2 class="free-consult__subtitle" v-html="md(text.intro)"></h2>
           <p class="free-consult__body">
             <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.one}}</span><br>
             <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.two}}</span><br>
@@ -27,11 +26,18 @@
 </template>
 
 <script>
+import MarkdownIt from 'markdown-it';
+
 export default {
   props: {
     text: {
       type: Object,
       required: true,
+    },
+  },
+  methods: {
+    md(message) {
+      return MarkdownIt().render(message);
     },
   },
 };

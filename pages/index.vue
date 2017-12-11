@@ -2,10 +2,10 @@
   <div class="page-index">
     <GlobalHeader/>
     <div class="wrapper">
-      <FreeConsultation :text="text.body.hero"/>
-      <PrevClients :text="text.body.trustedby"/>
-      <WhoWeAre :text="text.body.whoweare"/>
-      <HowWeWork :text="text.body.howwework"/>
+      <FreeConsultation text="text.hero"/>
+      <PrevClients :text="text.trustedby"/>
+      <WhoWeAre :text="text.whoweare"/>
+      <HowWeWork :text="text.howwework"/>
       <FreeAnalysis theme="light" />
     </div>
   </div>
@@ -29,8 +29,9 @@ export default {
     HowWeWork,
     FreeAnalysis,
   },
-  asyncData: async ({ app }) => ({
-    text: await app.$content('/pages').get('/home'),
-  }),
+  asyncData: async ({ app }) => {
+    const { body } = await app.$content('/pages').get('/home');
+    return { text: body };
+  },
 };
 </script>

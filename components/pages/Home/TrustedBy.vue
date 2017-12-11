@@ -6,7 +6,8 @@
         <div class="grid__cell 1/2--thumb 1/6--lap-and-up" v-for="(logo, key) in text.logos" :key="key">
           <img v-bind:src="imgURL(logo.image)"
             alt="1 Cover Logo"
-            class="prev-clients__logo prev-clients__logo--cover">
+            class="prev-clients__logo prev-clients__logo--cover"
+            v-bind:class="`prev-clients__logo--${key}`">
         </div>
         <!-- <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
           <img src="~/assets/images/paykel-logo.png"
@@ -87,22 +88,22 @@ export default {
   width: 100%;
   padding: 25px;
   @include av-mq(lap-and-up) {
-    &--cover {
+    &--0 {
       margin-top: 10px;
     }
-    &--one-edu {
+    &--5 {
       width: 120px;
     }
-    &--pos-estate {
+    &--2 {
       margin-top: 20px;
     }
-    &--crop-smart {
+    &--3 {
       margin-top: 30px;
     }
-    &--playgroup {
+    &--4 {
       width: 100px;
     }
-    &--paykel {
+    &--1 {
       margin-top: 25px;
     }
   }
