@@ -110,3 +110,14 @@ collections: # A list of collections the CMS should be able to edit
             - {label: Title, name: title, widget: markdown}
             - {label: Body, name: body, widget: markdown}
         - {label: Other Services, name: other, widget: markdown}
+    - label: "Testimonials Page"
+      name: "testimonials"
+      file: "content/pages/testimonials.yml"
+      fields:
+        - label: "Quotes"
+          name: "quotes"
+          widget: list
+          fields:
+            - {label: Author, name: title, widget: markdown}
+            - {label: Body, name: body, widget: markdown}
+            - {label: Image, name: image, widget: image}

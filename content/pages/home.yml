@@ -21,17 +21,17 @@ trustedby:
   button: Read testimonials from our clients
   logos:
     - alt: 1 Cover
-      image: /static/uploads/1-cover-logo.jpg
+      image: /uploads/1-cover-logo.jpg
     - alt: Paykel
-      image: /static/uploads/paykel-logo.png
+      image: /uploads/paykel-logo.png
     - alt: Positive Real Estate
-      image: /static/uploads/positive-real-estate-logo.jpg
+      image: /uploads/positive-real-estate-logo.jpg
     - alt: Crop Smart
-      image: /static/uploads/crop-smart-logo.jpg
+      image: /uploads/crop-smart-logo.jpg
     - alt: Playgroup NSW
-      image: /static/uploads/playgroup-nsw-logo.jpg
+      image: /uploads/playgroup-nsw-logo.jpg
     - alt: One Education
-      image: /static/uploads/one-education-logo.png
+      image: /uploads/one-education-logo.png
   title: Trusted By
   url: /testimonials
 whoweare:
@@ -68,5 +68,9 @@ howwework:
     - name: Workplace Improvement
     - name: and much more...
   subtitle: How we work with you
-  title: Focus on your mission  - We'll focus on your HR
+  title: >-
+    Focus on your mission  
+    
+    
+    We'll focus on your HR
   url: /contact

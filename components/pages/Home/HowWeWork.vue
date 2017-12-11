@@ -3,39 +3,15 @@
     <div class="container">
       <div class="grid">
         <div class="grid__cell 1/2--lap-and-up">
-          <h5 class="we-are__subtitle">How we work with you</h5>
-          <h2 class="we-are__title">Focus on your mission
-            <br>
-            <span> - </span>We'll focus on your HR</h2>
-          <p class="we-are__body">We can be engaged as an HR consultant to deliver a single project, such as a new employee management system designed to automate all your employee record-keeping or through to acting as your outsourced HR Manager on a retained basis. We can also just help out on an ad hoc basis by providing advice and support as required in relation to any HR issue – whether its basic HR advice on employee entitlements and Award interpretation to more complex situations involving restructures, redundancies or unfair dismissal claims. </p>
-          <a href="/contact" class="button button-primary">
-            Book your free 1 hour consultation
-          </a>
+          <h5 class="we-are__subtitle" v-html="md(text.subtitle)"></h5>
+          <h2 class="we-are__title" v-html="md(text.title)"></h2>
+          <p class="we-are__body" v-html="md(text.body)"></p>
+          <a href="/contact" class="button button-primary" v-html="md(text.button)"></a>
         </div>
         <div class="grid__cell 1/2--lap-and-up we-work__service-list">
-          <div class="we-work__service">
+          <div class="we-work__service" v-for="(feature, index) in text.features" :key="index">
             <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
-            <h3 class="we-work__service-title grid__cell 3/4">Measurement and Planning</h3>
-          </div>
-          <div class="we-work__service">
-            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
-            <h3 class="we-work__service-title grid__cell 3/4">HR Processes and Systems</h3>
-          </div>
-          <div class="we-work__service">
-            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
-            <h3 class="we-work__service-title grid__cell 3/4">Governance and Compliance</h3>
-          </div>
-          <div class="we-work__service">
-            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
-            <h3 class="we-work__service-title grid__cell 3/4">Performance Management</h3>
-          </div>
-          <div class="we-work__service">
-            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
-            <h3 class="we-work__service-title grid__cell 3/4">Workplace Improvement</h3>
-          </div>
-          <div class="we-work__service">
-            <img src="~/assets/images/icon-check.svg" alt="" class="we-work__img grid__cell 1/4">
-            <h3 class="we-work__service-title grid__cell 3/4">and much more...</h3>
+            <h3 class="we-work__service-title grid__cell 3/4">{{feature.name}}</h3>
           </div>
         </div>
       </div>
@@ -52,7 +28,14 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props: {
+    text: {
+      type: Object,
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss" scoped>

@@ -38,10 +38,7 @@ module.exports = {
   */
   css: ['normalize.css', '@/assets/styles/theme.scss'],
   modules: ['nuxt-sass-resources-loader', 'nuxt-netlify-cms', 'nuxtent'],
-  sassResources: [
-    resolve(__dirname, 'assets/styles/vendor/avalanche.scss'),
-    resolve(__dirname, 'assets/styles/settings/variables.scss'),
-  ],
+  sassResources: [resolve(__dirname, 'assets/styles/theme.scss')],
   /*
   ** Build configuration
   */
@@ -106,4 +103,5 @@ module.exports = {
     ],
   },
   plugins: [{ src: '~/plugins/markdown', ssr: true }],
+  mode: 'spa',
 };

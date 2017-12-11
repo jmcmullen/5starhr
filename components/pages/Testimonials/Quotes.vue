@@ -1,13 +1,13 @@
 <template>
   <section class="testimonials">
     <div class="container">
-      <div class="grid monial" v-for="(monial, i) in testimonials" v-bind:class="{ 'monial--odd': isOdd(i) }">
+      <div class="grid monial" v-for="(monial, i) in testimonials" v-bind:class="{ 'monial--odd': isOdd(i) }" :key="i">
         <div v-bind:class="{ 'monial__img--odd': isOdd(i + 1) }" class="grid__cell 2/6--lap-and-up monial__img--top">
           <img class="monial__img-src" v-bind:src="monial.image" alt="" />
         </div>
         <div class="grid__cell 4/6--lap-and-up">
           <blockquote class="quote">
-            <p v-for="quote in monial.quotes">{{ quote }}</p>
+            <p v-for="(quote, index) in monial.quotes" :key="index">{{ quote }}</p>
             <cite class="quote__cite">
               <strong>{{ monial.author }}</strong>
               - {{ monial.position }}</cite>
@@ -22,13 +22,13 @@
 </template>
 
 <script>
-import tycenDemolition from '../assets/img/tycen-demolition.jpg';
-import oneEducation from '../assets/img/one-education-logo.png';
-import eastWestEngineering from '../assets/img/east-west-engineering.jpg';
-import panPacific from '../assets/img/pan-pacific.png';
-import discTechnology from '../assets/img/discovery-technology.jpg';
-import firstMigration from '../assets/img/first-class-migration.jpg';
-import obserHotel from '../assets/img/observatory-hotel.jpg';
+import tycenDemolition from '~/assets/images/tycen-demolition.jpg';
+import oneEducation from '~/assets/images/one-education-logo.png';
+import eastWestEngineering from '~/assets/images/east-west-engineering.jpg';
+import panPacific from '~/assets/images/pan-pacific.png';
+import discTechnology from '~/assets/images/discovery-technology.jpg';
+import firstMigration from '~/assets/images/first-class-migration.jpg';
+import obserHotel from '~/assets/images/observatory-hotel.jpg';
 
 export default {
   data() {
@@ -102,6 +102,12 @@ export default {
       ],
     };
   },
+  props: {
+    text: {
+      type: Object,
+      required: true,
+    },
+  },
   methods: {
     isOdd(num) {
       return num % 2;
@@ -110,7 +116,7 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped/>
+<style lang="scss" scoped>
 .testimonials {
   padding: 64px 0;
 }
@@ -135,7 +141,8 @@ export default {
 .quote {
   margin-top: 35px;
   text-align: left;
-  p, cite {
+  p,
+  cite {
     @include av-mq(lap-and-up) {
       margin-left: 40px;
     }
@@ -149,7 +156,7 @@ export default {
     padding-left: 5px;
   }
   &:before {
-    background-image: url('../../img/quote.svg');
+    background-image: url('~/assets/images/quote.svg');
     background-size: contain;
     height: 35px;
     width: 35px;
@@ -182,7 +189,7 @@ export default {
 
 .monial__img--btm {
   @include av-mq(thumb) {
-    display: none
+    display: none;
   }
   @include av-mq(lap-and-up) {
     &.monial__img--odd {

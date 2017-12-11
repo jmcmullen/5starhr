@@ -3,27 +3,23 @@
     <div class="we-are__copy container">
       <div class="grid">
         <div class="we-are__copy-section grid__cell 1/2--lap-and-up">
-          <h5 class="we-are__subtitle">Who We Are</h5>
+          <h5 class="we-are__subtitle" v-html="md(text.subtitle)"></h5>
           <h2 class="we-are__title" v-html="md(text.title)"></h2>
         </div>
         <div class="we-are__copy-section grid__cell 1/2--lap-and-up">
-          <p class="we-are__body">{{text.body}}</p>
+          <p class="we-are__body" v-html="md(text.body)"></p>
         </div>
       </div>
     </div>
     <div class="we-are__media container">
       <div class="we-are__services">
-        <p class="we-are__body-cta">
-          Our services are tailored specifically to the needs of small-medium businesses.
-        </p>
-        <a href="/services" class="button button-primary">See what we offer</a>
+        <p class="we-are__body-cta" v-html="md(text.caption)"></p>
+        <a href="/services" class="button button-primary" v-html="md(text.button)"></a>
       </div>
       <img src="~/assets/images/sydney-city-scape.jpg" alt="" class="we-are__img">
       <div class="we-are__services we-are__services--mob">
-        <p class="we-are__body-cta">
-          Our services are tailored specifically to the needs of small-medium businesses.
-        </p>
-        <a href="/services" class="button button-primary">See what we offer</a>
+        <p class="we-are__body-cta" v-html="md(text.caption)"></p>
+        <a href="/services" class="button button-primary" v-html="md(text.button)"></a>
       </div>
     </div>
     <div class="clearfix"></div>
@@ -52,25 +48,6 @@ export default {
 
 .we-are__copy {
   padding: 0 20px;
-}
-
-.we-are__subtitle {
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin-bottom: 0;
-  text-align: left;
-}
-
-.we-are__title {
-  text-align: left;
-  font-size: 2.3rem;
-  margin-top: 0;
-  span {
-    display: inline;
-    @include av-mq(lap-and-up) {
-      display: none;
-    }
-  }
 }
 
 .we-are__body {
@@ -136,6 +113,27 @@ export default {
     font-size: 1.3rem;
     text-align: left;
     color: white;
+  }
+}
+</style>
+
+<style lang="scss">
+.we-are__subtitle p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.we-are__title p {
+  text-align: left;
+  font-size: 2.3rem;
+  margin-top: 0;
+  span {
+    display: inline;
+    @include av-mq(lap-and-up) {
+      display: none;
+    }
   }
 }
 </style>

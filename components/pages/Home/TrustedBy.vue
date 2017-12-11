@@ -9,38 +9,11 @@
             class="prev-clients__logo prev-clients__logo--cover"
             v-bind:class="`prev-clients__logo--${key}`">
         </div>
-        <!-- <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
-          <img src="~/assets/images/paykel-logo.png"
-          alt="Paykel Logo"
-          class="prev-clients__logo prev-clients__logo--paykel">
-        </div>
-        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
-          <img src="~/assets/images/positive-real-estate-logo.jpg"
-          alt="Positive Real Estate Logo"
-          class="prev-clients__logo prev-clients__logo--pos-estate">
-        </div>
-        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
-          <img src="~/assets/images/crop-smart-logo.jpg"
-          alt="Crop Smart Logo"
-          class="prev-clients__logo prev-clients__logo--crop-smart">
-        </div>
-        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
-          <img src="~/assets/images/playgroup-nsw-logo.jpg"
-          alt="Playgroup NSW Logo"
-          class="prev-clients__logo prev-clients__logo--playgroup">
-        </div>
-        <div class="grid__cell 1/2--thumb 1/6--lap-and-up">
-          <img src="~/assets/images/one-education-logo.png"
-          alt="One Education Logo"
-          class="prev-clients__logo prev-clients__logo--one-edu">
-        </div> -->
       </div>
     </div>
     <div class="container">
       <div class="prev-clients__testimonial six columns">
-        <a href="/testimonials" class="button">
-          Read testimonials from&nbsp;our clients
-        </a>
+        <a href="/testimonials" class="button" v-html="md(text.button)"></a>
       </div>
     </div>
   </section>
@@ -62,7 +35,7 @@ export default {
   margin: 25px 0 0;
   padding: 65px 20px;
   .button {
-    max-width: 260px;
+    max-width: 240px;
     margin: 0 auto;
   }
 }
