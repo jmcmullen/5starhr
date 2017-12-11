@@ -4,7 +4,7 @@
     <div class="container">
       <div class="grid">
         <div class="grid__cell 1/2--thumb 1/6--lap-and-up" v-for="(logo, key) in text.logos" :key="key">
-          <img v-bind:src="imgURL(logo.image)"
+          <img v-bind:src="logo.image"
             alt="1 Cover Logo"
             class="prev-clients__logo prev-clients__logo--cover"
             v-bind:class="`prev-clients__logo--${key}`">
@@ -52,12 +52,6 @@ export default {
     text: {
       type: Object,
       required: true,
-    },
-  },
-  methods: {
-    imgURL(image) {
-      const remove = '/static';
-      return image.substr(remove.length);
     },
   },
 };

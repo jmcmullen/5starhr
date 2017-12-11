@@ -1,5 +1,10 @@
 <template>
   <header class="global-header">
+    <div class="topbar">
+      <div class="container">
+        <p><strong>Free 1 Hour Consultation</strong> | 0422 634 359 | kirsty@5starhr.com.au</p>
+      </div>
+    </div>
     <div class="container">
       <div class="branding">
         <a href="/">
@@ -11,9 +16,11 @@
       <transition name="fade">
         <div class="main-menu" v-show="openMenu">
           <nav class="main-menu__nav">
-            <a class="main-menu__link" v-for="link in menu" :href="link.href" v-bind:class="{ active: isActive(link) }">{{link.title}}</a>
-            <img src="~/assets/images/icon-phone.svg" alt="" class="main-menu__icon">
-            <a href="tel://0422634359" class="main-menu__phone">0422 634 359</a>
+            <a class="main-menu__link" v-for="link in menu" :href="link.href" v-bind:class="{ active: isActive(link) }" :key="link.title">{{link.title}}</a>
+            <div class="main-menu__call">
+              <img src="~/assets/images/icon-phone.svg" alt="" class="main-menu__icon">
+              <a href="tel://0422634359" class="main-menu__phone">0422 634 359</a>
+            </div>
           </nav>
         </div>
       </transition>
@@ -72,8 +79,8 @@ $dark-blue: #0481ac;
 }
 
 .branding__img {
-  width: 145px;
-  margin-top: 0;
+  width: 90px;
+  margin-top: 5px;
   float: left;
   margin-left: 10px;
 }
@@ -86,7 +93,7 @@ $dark-blue: #0481ac;
   @include av-mq(lap-and-up) {
     display: inline !important;
     float: right;
-    margin-top: 25px;
+    margin-top: 15px;
     width: initial;
     position: relative;
   }
@@ -146,9 +153,11 @@ $dark-blue: #0481ac;
   text-align: center;
   display: block;
   margin: 45px auto 0 auto;
+}
+
+.main-menu__call {
   @include av-mq(lap-and-up) {
-    display: inline;
-    font-size: 18px;
+    display: none;
   }
 }
 
@@ -161,6 +170,22 @@ $dark-blue: #0481ac;
   }
   @include av-mq(lap-and-up) {
     display: none;
+  }
+}
+
+.topbar {
+  color: white;
+  background-color: $dark-blue;
+  padding: 8px 0;
+  display: none;
+  font-size: 0.8rem;
+
+  p {
+    margin-left: 15px;
+  }
+
+  @include av-mq(lap-and-up) {
+    display: block;
   }
 }
 </style>

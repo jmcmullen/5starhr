@@ -6,9 +6,9 @@
           <img class="about-us__portrait" src="~/assets/images/random-lady.jpg" alt="" />
         </div>
         <div class="grid__cell 2/3--lap-and-up about-us__text">
-          <h5 class="about-us__subtitle">{{text.subtitle}}</h5>
-          <h2 class="about-us__title">{{text.title}}</h2>
-          <p class="about-us__body">{{text.body}}</p>
+          <h5 class="about-us__subtitle" v-html="md(text.subtitle)"></h5>
+          <h2 class="about-us__title" v-html="md(text.title)"></h2>
+          <p class="about-us__body" v-html="md(text.body)"></p>
           <!-- <div class="about-us__partner">
             <img class="about-us__partner-img about-us__partner-img--ahri" src="~/assets/images/ahri-logo.jpg" alt="">
             <img class="about-us__partner-img about-us__partner-img--coach" src="~/assets/images/hr-coach-logo.jpg" alt="">
