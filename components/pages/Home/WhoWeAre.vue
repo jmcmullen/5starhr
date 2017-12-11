@@ -7,14 +7,16 @@
           <h2 class="we-are__title" v-html="md(text.title)"></h2>
         </div>
         <div class="we-are__copy-section grid__cell 1/2--lap-and-up">
-          <p class="we-are__body" v-html="md(text.body)"></p>
+          <p class="we-are__body">{{text.body}}</p>
         </div>
       </div>
     </div>
     <div class="we-are__media container">
       <div class="we-are__services">
-        <p class="we-are__body-cta" v-html="md(text.caption)"></p>
-        <a :href="text.url" class="button button-primary">{{text.button}}</a>
+        <p class="we-are__body-cta">
+          Our services are tailored specifically to the needs of small-medium businesses.
+        </p>
+        <a href="/services" class="button button-primary">See what we offer</a>
       </div>
       <img src="~/assets/images/sydney-city-scape.jpg" alt="" class="we-are__img">
       <div class="we-are__services we-are__services--mob">

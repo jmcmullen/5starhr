@@ -119,7 +119,7 @@ export default {};
   background: #1cb6e6;
   @include av-mq(lap-and-up) {
     width: 420px;
-    margin-top: 310px;
+    margin-top: 400px;
     margin-left: 490px;
     position: absolute;
   }
