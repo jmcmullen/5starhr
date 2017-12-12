@@ -1,6 +1,7 @@
 ---
 title: Why the Greek Olympic team need some Five Star HR
 date: '2012-07-31 11:48pm'
+image: /uploads/greek-athlete.jpg
 ---
 I have to admit that along with the disgust that most of the rest of the world shared at the Greek Triple Jumper, Voula Papachristou’s racist tweets last week - I also sympathised with the Greek Olympic Committee.  How exactly do you manage your team appropriately and prevent them from going ‘off the reservation’ with Social Media? What is an appropriate Internet usage policy? The damage caused to both the Olympic movement and to the Greek national team was certainly great - but nothing in comparison to the shame of an athlete’s lifelong dream crushed by one moment of madness. 
 
