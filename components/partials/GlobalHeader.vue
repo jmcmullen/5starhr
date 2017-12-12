@@ -8,7 +8,7 @@
     <div class="container">
       <div class="branding">
         <a href="/">
-          <img src="~/assets/images/5-star-hr-logo.jpg" alt="Five Star HR Logo" class="branding__img">
+          <img src="~/assets/images/5starhr_logo_text.png" alt="Five Star HR Logo" class="branding__img">
         </a>
       </div>
       <img class="icon-menu icon-menu--open" src="~/assets/images/icon-menu.svg" alt="Menu" @click="openMenu = true" v-show="!openMenu" />
@@ -57,7 +57,7 @@ $dark-blue: #0481ac;
 
 .global-header {
   width: 100%;
-  height: 80px;
+  height: 100px;
   position: fixed;
   z-index: 1000;
   background-color: $white;
@@ -79,7 +79,7 @@ $dark-blue: #0481ac;
 }
 
 .branding__img {
-  width: 90px;
+  width: 120px;
   margin-top: 5px;
   float: left;
   margin-left: -5px;
@@ -93,7 +93,7 @@ $dark-blue: #0481ac;
   @include av-mq(lap-and-up) {
     display: inline !important;
     float: right;
-    margin-top: 15px;
+    margin-top: 25px;
     width: initial;
     position: relative;
   }
