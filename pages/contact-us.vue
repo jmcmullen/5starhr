@@ -6,7 +6,7 @@
       <div class="contact__sections container">
         <div class="contact__email grid__cell 1/2">
 
-          <form class="contact__form" name="contact" method="POST" data-netlify="true">
+          <form class="contact__form" name="contact" method="POST" data-netlify="true" netlify>
 
             <h2 class="contact__title">Get in touch</h2>
             <p class="contact__body">Leave your name and number and we'll reach out.</p>
