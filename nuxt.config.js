@@ -103,5 +103,5 @@ module.exports = {
     ],
   },
   plugins: [{ src: '~/plugins/markdown', ssr: true }],
-  mode: 'spa',
+  // mode: 'spa',
 };
