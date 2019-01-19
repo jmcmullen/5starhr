@@ -17,7 +17,7 @@
         <div class="main-menu" v-show="openMenu">
           <nav class="main-menu__nav">
             <a class="main-menu__link" v-for="link in menu" :href="link.href" v-bind:class="{ active: isActive(link) }" :key="link.title">{{link.title}}</a>
-            <a href="tel://0422634359" class="main-menu__link main-menu__link--cta">FREE 1 HOUR HR CALL</a>
+            <a href="/contact-us" class="main-menu__link main-menu__link--cta">FREE 1 HOUR HR CALL</a>
           </nav>
         </div>
       </transition>
