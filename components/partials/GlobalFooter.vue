@@ -27,7 +27,7 @@
         <div class="contact grid__cell 1/4--lap-and-up">
           <div>
           <img src="~/assets/images/envelope-square-solid.svg" alt="Email">
-            <a href="mailto://kirsty@fivestarhr.com.au">
+            <a href="mailto:kirsty@fivestarhr.com.au">
               kirsty@fivestarhr.com.au
             </a>
           </div>

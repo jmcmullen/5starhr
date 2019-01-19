@@ -6,13 +6,13 @@
       </div>
     </div>
     <div class="container">
+      <img class="icon-menu icon-menu--open" src="~/assets/images/icon-menu.svg" alt="Menu" @click="openMenu = true" v-show="!openMenu" />
+      <img class="icon-menu icon-menu--close" src="~/assets/images/icon-close.svg" alt="Close" @click="openMenu = false" v-show="openMenu" />
       <div class="branding">
         <a href="/">
           <img src="~/assets/images/logo.jpg" alt="Five Star HR Logo" class="branding__img">
         </a>
       </div>
-      <img class="icon-menu icon-menu--open" src="~/assets/images/icon-menu.svg" alt="Menu" @click="openMenu = true" v-show="!openMenu" />
-      <img class="icon-menu icon-menu--close" src="~/assets/images/icon-close.svg" alt="Close" @click="openMenu = false" v-show="openMenu" />
       <transition name="fade">
         <div class="main-menu" v-show="openMenu">
           <nav class="main-menu__nav">
@@ -79,7 +79,7 @@ $dark-blue: #0481ac;
 }
 
 .branding__img {
-  float: left;
+  float: right;
   margin-left: -5px;
   height: 70px;
 
@@ -174,9 +174,9 @@ $dark-blue: #0481ac;
 }
 
 .icon-menu {
-  float: right;
+  float: left;
   display: block;
-  margin: 24px 20px 0 0;
+  margin: 24px 20px 0 24px;
   &--close {
     width: 30px;
   }

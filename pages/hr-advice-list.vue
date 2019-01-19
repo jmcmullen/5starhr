@@ -28,7 +28,7 @@ export default {
     FreeAnalysis,
     PostPreview,
   },
-  async asyncData({ app, route }) {
+  async asyncData({ app }) {
     const all = await app.$content('/posts').getAll();
     return { all };
   },
