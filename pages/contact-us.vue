@@ -4,8 +4,8 @@
     <div class="wrapper">
       <PageBanner title="Contact Us"/>
       <div class="contact__sections container">
-        <div class="grid__cell 1/4"/>
-        <div class="contact__email grid__cell 3/4">
+        <div class="grid__cell 1/4--lap-and-up"/>
+        <div class="contact__email grid__cell 3/4--lap-and-up">
 
           <form class="contact__form" name="contact" action="https://formspree.io/kirsty@fivestarhr.com.au" method="POST">
 

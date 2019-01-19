@@ -82,6 +82,10 @@ $dark-blue: #0481ac;
   float: left;
   margin-left: -5px;
   height: 70px;
+
+  @include av-mq(lap-and-up) {
+    height: 69px;
+  }
 }
 
 .main-menu {

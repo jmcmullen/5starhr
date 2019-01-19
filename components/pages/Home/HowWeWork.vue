@@ -6,7 +6,7 @@
           <h5 class="we-are__subtitle" v-html="md(text.subtitle)"></h5>
           <h2 class="we-are__title" v-html="md(text.title)"></h2>
           <p class="we-are__body" v-html="md(text.body)"></p>
-          <a href="/contact" class="button button-primary" v-html="md(text.button)"></a>
+          <a href="/contact-us" class="button button-primary" v-html="md(text.button)"></a>
         </div>
         <div class="grid__cell 1/2--lap-and-up we-work__service-list">
           <div class="we-work__service" v-for="(feature, index) in text.features" :key="index">
