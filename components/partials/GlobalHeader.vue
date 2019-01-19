@@ -2,7 +2,7 @@
   <header class="global-header">
     <div class="topbar">
       <div class="container">
-        <p><strong>Free 1 Hour Consultation</strong> | 0422 634 359 | kirsty@5starhr.com.au</p>
+        <p><strong>Free 1 Hour Consultation</strong> | <a href="tel://+61466909749">0422 634 359</a> | <a href="mailto:kirsty@fivestarhr.com.au">kirsty@fivestarhr.com.au</a></p>
       </div>
     </div>
     <div class="container">
@@ -191,6 +191,11 @@ $dark-blue: #0481ac;
   padding: 8px 0;
   display: none;
   font-size: 0.8rem;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
 
   p {
     margin: 0 15px 0 0;
