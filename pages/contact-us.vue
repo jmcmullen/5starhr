@@ -10,7 +10,7 @@
           <form class="contact__form" name="contact" action="https://formspree.io/kirsty@fivestarhr.com.au" method="POST">
 
             <h2 class="contact__title">Get in touch</h2>
-            <p class="contact__body">Leave your name and number and we'll reach out.</p>
+            <p class="contact__body">Leave your name and number and we'll reach out for a no obligation initial discussion.</p>
 
             <input type="hidden" name="form-name" value="contact" />
             <input type="text" name="name" placeholder="Your name" />
@@ -25,21 +25,18 @@
         </div>
       </div>
     </div>
-    <FreeAnalysis/>
   </div>
 </template>
 
 <script>
 import GlobalHeader from '~/components/partials/GlobalHeader';
 import PageBanner from '~/components/partials/PageBanner';
-import FreeAnalysis from '~/components/commons/FreeAnalysis';
 
 export default {
   layout: 'page',
   components: {
     GlobalHeader,
     PageBanner,
-    FreeAnalysis,
   },
   head: {
     title: 'Five Star HR - Contact Us',
