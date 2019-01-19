@@ -107,4 +107,14 @@ module.exports = {
     { src: '~/plugins/ga', ssr: false },
   ],
   mode: 'spa',
+
+  router: {
+    extendRoutes(routes, res) {
+      routes.push({
+        name: '/hr-advice',
+        path: '*',
+        component: res(__dirname, 'pages/hr-advice/_post.vue'),
+      });
+    },
+  },
 };
