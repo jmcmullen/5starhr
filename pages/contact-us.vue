@@ -4,13 +4,15 @@
     <div class="wrapper">
       <PageBanner title="Contact Us"/>
       <div class="contact__sections container">
-        <div class="contact__email grid__cell 1/2">
+        <div class="grid__cell 1/4"/>
+        <div class="contact__email grid__cell 3/4">
 
-          <form class="contact__form" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify>
+          <form class="contact__form" name="contact" action="https://formspree.io/kirsty@fivestarhr.com.au" method="POST">
 
             <h2 class="contact__title">Get in touch</h2>
             <p class="contact__body">Leave your name and number and we'll reach out.</p>
 
+            <input type="hidden" name="form-name" value="contact" />
             <input type="text" name="name" placeholder="Your name" />
             <input type="text" name="number" placeholder="Your phone number" />
             <input type="text" name="email" placeholder="Your email address" />
@@ -20,12 +22,6 @@
             <button class="button button-primary" type="submit">Submit</button>
 
           </form>
-        </div>
-        <div class="contact__call grid__cell 1/2">
-            <h2 class="contact__title">Or...</h2>
-            <p class="contact__body">Call us at anytime:
-              <span class="contact__call">0422 634 359</span>
-            </p>
         </div>
       </div>
     </div>
@@ -44,6 +40,17 @@ export default {
     GlobalHeader,
     PageBanner,
     FreeAnalysis,
+  },
+  head: {
+    title: 'Five Star HR - Contact Us',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          "Contact us page for Five Star HR, Human Resource consulting service on Sydney’s Northern Beaches. Leave your name and number and we'll reach out or just give us a call on +61 422 634359.",
+      },
+    ],
   },
 };
 </script>

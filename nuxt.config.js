@@ -5,14 +5,14 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'fivestarhr',
+    title: 'Five Star HR - Sydney-based HR Consultancy',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: 'Five Start HR Website',
+        content: 'Five Star HR provides a HR resource and human resources outsourcing, training and hr consultant services in Sydney. Coaching on hr policies and hr procedure drafting, and a full HR planning process. Sydney human resources and Hr consultant services in Sydney.',
       },
     ],
     link: [
@@ -102,6 +102,9 @@ module.exports = {
       ],
     ],
   },
-  plugins: [{ src: '~/plugins/markdown', ssr: true }],
-  // mode: 'spa',
+  plugins: [
+    { src: '~/plugins/markdown', ssr: true },
+    { src: '~/plugins/ga', ssr: false },
+  ],
+  mode: 'spa',
 };

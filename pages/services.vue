@@ -26,6 +26,17 @@ export default {
     FrequentQuestions,
     FreeAnalysis,
   },
+  head: {
+    title: 'Five Star HR - Services',
+    meta: [
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Services provided by Five Star HR as an outsourced HR Consultant, HR Coach, Human Resource Consultant. We provides Hr consultancy services in Sydney, Hr consultant services and Human resources consultant.',
+      },
+    ],
+  },
 };
 </script>
 

@@ -1,0 +1,8 @@
+/services.php   /services
+/testimonials.php   /our-clients
+/about-us.php   /about-us
+/hr-advice.php  /hr-advice
+/contact-us.php   /contact-us
+/hr-advice/page/2   /hr-advice
+/hr-advice/tag/*    /hr-advice
+/hr-advice/archive/*    /hr-advice
