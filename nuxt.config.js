@@ -111,8 +111,8 @@ module.exports = {
   router: {
     extendRoutes(routes, res) {
       routes.push({
-        name: '/hr-advice',
-        path: '*',
+        name: 'hr-advice',
+        path: '/hr-advice',
         component: res(__dirname, 'pages/hr-advice/_post.vue'),
       });
     },
