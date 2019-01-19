@@ -6,26 +6,13 @@
       <div class="contact__sections container">
         <div class="contact__email grid__cell 1/2">
 
-          <form class="contact__form" name="contact" method="POST" action="/thank-you" data-netlify="true" netlify>
+          <div class="thanks">
 
-            <h2 class="contact__title">Get in touch</h2>
-            <p class="contact__body">Leave your name and number and we'll reach out.</p>
+            <h2 class="contact__title">Thanks for your submission</h2>
+            <p class="contact__body">We will be in touch shortly</p>
+            
 
-            <input type="text" name="name" placeholder="Your name" />
-            <input type="text" name="number" placeholder="Your phone number" />
-            <input type="text" name="email" placeholder="Your email address" />
-            <textarea rows="8" name="message" placeholder="Your message..." >
-            </textarea>
-
-            <button class="button button-primary" type="submit">Submit</button>
-
-          </form>
-        </div>
-        <div class="contact__call grid__cell 1/2">
-            <h2 class="contact__title">Or...</h2>
-            <p class="contact__body">Call us at anytime:
-              <span class="contact__call">0422 634 359</span>
-            </p>
+          </div>
         </div>
       </div>
     </div>
@@ -72,6 +59,10 @@ export default {
 
 .contact__sections {
   padding-bottom: 80px;
+}
+
+.thanks {
+  padding: 4rem 0 8rem;
 }
 </style>
 
