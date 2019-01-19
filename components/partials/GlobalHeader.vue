@@ -97,7 +97,7 @@ $dark-blue: #0481ac;
     display: inline !important;
     float: left;
     margin-top: 22px;
-    margin-left: 50px;
+    margin-left: 0px;
     width: initial;
     position: relative;
   }
@@ -150,7 +150,7 @@ $dark-blue: #0481ac;
   margin: auto;
 
   @include av-mq(handheld-and-up) {
-    margin-left: 10px;
+    margin-left: 30px;
     display: none;
   }
 
@@ -188,7 +188,7 @@ $dark-blue: #0481ac;
 .topbar {
   color: white;
   background-color: $dark-blue;
-  padding: 8px 0;
+  padding: 8px 25px;
   display: none;
   font-size: 0.8rem;
 
@@ -198,7 +198,7 @@ $dark-blue: #0481ac;
   }
 
   p {
-    margin: 0 15px 0 0;
+    margin: 0 15px 0 15px;
   }
 
   @include av-mq(lap-and-up) {
