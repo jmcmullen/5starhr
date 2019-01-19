@@ -16,14 +16,16 @@
         </div>
       </div>
     </div>
-    <div class="we-work__media container container--mob">
-      <img src="~/assets/images/small-business.jpg" alt="" class="we-work__img-cta">
-      <div class="we-work__services">
-        <h2 class="we-work__title-cta">Evidence-based methodology</h2>
-        <p class="we-work__body-cta">Through the HR Coach Research Institute, we have a range of HR Consulting services backed by solid and ongoing research, designed to deliver quality, measurable results for business.</p>
+     <div class="we-work__media">
+       <div class="container container--mob">
+        <img src="~/assets/images/hr-framework.jpg" alt="" class="we-work__img-cta">
+        <div class="we-work__services">
+          <h2 class="we-work__title-cta">Evidence-based methodology</h2>
+          <p class="we-work__body-cta">Through the HR Coach Research Institute, we have a range of HR Consulting services backed by solid and ongoing research, designed to deliver quality, measurable results for business.</p>
+        </div>
       </div>
+      <div class="clearfix"></div>
     </div>
-    <div class="clearfix"></div>
   </section>
 </template>
 
@@ -41,13 +43,18 @@ export default {
 <style lang="scss" scoped>
 .we-work {
   margin-top: 25px;
-  padding: 35px 0 0;
+  padding: 35px 0 65px;
   .button {
     float: left;
     margin-top: 25px;
   }
   .container {
     padding: 0 20px;
+
+    @include av-mq(lap-and-up) {
+      padding: 0 20px 65px;
+    }
+
     &--mob {
       padding: 0;
     }
@@ -92,8 +99,16 @@ export default {
 }
 
 .we-work__media {
-  padding-top: 65px;
-  max-width: 890px;
+  padding: 0;
+
+  .container {
+    max-width: 890px;
+  }
+
+  @include av-mq(lap-and-up) {
+    background: #f1f6fb;
+    padding: 65px 0 230px;
+  }
 }
 
 .we-work__services {
@@ -102,7 +117,7 @@ export default {
   background: #1cb6e6;
   @include av-mq(lap-and-up) {
     width: 420px;
-    margin-top: 400px;
+    margin-top: 420px;
     margin-left: 490px;
     position: absolute;
   }
@@ -119,10 +134,12 @@ export default {
   width: 100%;
   max-width: 700px;
   margin-top: 45px;
+  background-color: #fff;
+  padding: 1rem;
   @include av-mq(lap-and-up) {
     float: left;
-    margin-top: 100px;
     margin-bottom: 95px;
+    padding: 3rem 1rem;
   }
 }
 </style>

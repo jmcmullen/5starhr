@@ -99,7 +99,7 @@ export default {
 }
 
 .our-services__body {
-  margin-top: 50px;
+  margin-top: 25px;
   text-align: left;
   color: #747474;
   margin-bottom: 75px;

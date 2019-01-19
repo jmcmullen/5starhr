@@ -1,7 +1,8 @@
 <template>
     <article>
         <h2>{{post.title}}</h2>
-        <div class="content" v-html="post.body"></div>
+        <div class="content" v-html="post.body.substr(0, 256)"></div>
+        <nuxt-link :to="post.permalink">Read More</nuxt-link>
     </article>
 </template>
 
@@ -17,8 +18,7 @@ export default {
 </script>
 
 <style lang="scss">
-article.preview {
-  max-width: 600px;
-  margin: auto;
+article {
+  margin: 3rem auto;
 }
 </style>

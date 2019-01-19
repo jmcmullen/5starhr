@@ -18,6 +18,7 @@ import FreeAnalysis from '~/components/commons/FreeAnalysis';
 import FrequentQuestions from '~/components/pages/Services/Faq';
 
 export default {
+  layout: 'page',
   components: {
     GlobalHeader,
     PageBanner,

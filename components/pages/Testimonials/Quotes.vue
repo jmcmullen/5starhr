@@ -3,7 +3,7 @@
     <div class="container">
       <div class="grid monial" v-for="(monial, i) in testimonials" v-bind:class="{ 'monial--odd': isOdd(i) }" :key="i">
         <div v-bind:class="{ 'monial__img--odd': isOdd(i + 1) }" class="grid__cell 2/6--lap-and-up monial__img--top">
-          <img class="monial__img-src" v-bind:src="monial.image" alt="" />
+          <img class="monial__img-src" v-bind:src="monial.image" alt="" :style="{ 'margin-top': `${monial.offset}px` }" />
         </div>
         <div class="grid__cell 4/6--lap-and-up">
           <blockquote class="quote">
@@ -14,7 +14,7 @@
           </blockquote>
         </div>
         <div v-bind:class="{ 'monial__img--odd': isOdd(i + 1) }" class="grid__cell 2/6--lap-and-up monial__img--btm">
-          <img class="monial__img-src" v-bind:src="monial.image" alt="" />
+          <img class="monial__img-src" v-bind:src="monial.image" alt="" :style="{ 'margin-top': `${monial.offset}px` }"/>
         </div>
       </div>
     </div>
@@ -42,6 +42,7 @@ export default {
             'Kirsty is now our on-call HR guru and she continues to assist us in our business by providing ongoing coaching and advice and filling the gap in our HR expertise.',
           ],
           image: tycenDemolition,
+          offset: 0,
         },
 
         {
@@ -53,6 +54,7 @@ export default {
             "I can't recommend Kirsty and FiveStarHR strongly enough.",
           ],
           image: oneEducation,
+          offset: 35,
         },
 
         {
@@ -62,6 +64,7 @@ export default {
             'We engaged Five Star HR to help recruit a Senior Sales Manager and were very pleased with the service, sense of urgency and most important ‘the result’. Unlike a typical recruitment consultant, Kirsty provided a complete end to end recruitment service - including position description, behavioural profiling tool and compliant employment contract. We look forward to utilising Five Star HR in the future as we continue to develop our internal HR systems and processes.',
           ],
           image: eastWestEngineering,
+          offset: 60,
         },
 
         {
@@ -71,6 +74,7 @@ export default {
             'Kirsty managed the implementation of numerous changes within the business including automated time and attendance systems, Enterprise Agreements, training and staff career development, transferring of staff to new entity during merger and acquisition (handled with the wisdom and caring of a dedicated and passionate HR professional).',
           ],
           image: panPacific,
+          offset: 25,
         },
 
         {
@@ -80,6 +84,7 @@ export default {
             "Five Star HR provided me with valuable advice in regard to various HR scenarios over the past year. Their knowledge, and more importantly - Kirsty's ability to understand people, has been instrumental in driving cultural change at Discovery. I would recommend her to any business leader that requires the services of a professional HR consultant.",
           ],
           image: discTechnology,
+          offset: 35,
         },
 
         {
@@ -89,6 +94,7 @@ export default {
             'I would highly recommend Five Star HR. I refer many of my small to medium corporate clients on a regular basis to assist with HR issues such as contracts of employment, training plans, internal policies and processes and the feedback I get from my clients is always extremely positive. They provide expert advice and and go out of their way to assist on every occasion',
           ],
           image: firstMigration,
+          offset: 40,
         },
 
         {
@@ -98,6 +104,7 @@ export default {
             "I can't recommend Kirsty highly enough - a truly outstanding HR professional and an absolute pleasure to work with. Kirsty was our Regional HR Director for over 6 years, and we were consistently recognised and awarded in the industry as the most desirable brand to work for. A recommendation for our HR programs doesn't come much higher than that!",
           ],
           image: obserHotel,
+          offset: 0,
         },
       ],
     };

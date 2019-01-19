@@ -1,18 +1,19 @@
 hero:
   features:
     one: Review HR Processes
-    three: Provide Recommendations
+    three: HR Compliance Programs
     two: Identify Risks
+    four: HR Skills Coaching
+    five: In House Recruitment
+    six: Outsourced HR Managment
+    seven: Online HR Systems Implementation
+    eight: Adhoc HR Advice & Support
   form:
     button: Get my free consultation
     email: How should we contact you?
     name: What's your name?
   intro: >-
-    Five Star HR will partner with your organisation to help you get the best
-    out of your most valuable asset 
-
-
-    – your people.
+    Five Star HR is a Sydney-based Human Resources consulting and coaching practice that partners with businesses to help them get the most from their people.
   title: |-
     **FREE 1 Hour**
 

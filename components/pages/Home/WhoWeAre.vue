@@ -16,7 +16,7 @@
         <p class="we-are__body-cta" v-html="md(text.caption)"></p>
         <a href="/services" class="button button-primary" v-html="md(text.button)"></a>
       </div>
-      <img src="~/assets/images/sydney-city-scape.jpg" alt="" class="we-are__img">
+      <img src="~/assets/images/hr-people-hill.jpg" alt="" class="we-are__img">
       <div class="we-are__services we-are__services--mob">
         <p class="we-are__body-cta" v-html="md(text.caption)"></p>
         <a href="/services" class="button button-primary" v-html="md(text.button)"></a>
@@ -78,7 +78,7 @@ export default {
   width: 100%;
   padding: 35px;
   background: $mid-blue;
-  margin-top: 340px;
+  margin-top: 420px;
   display: none;
   .button {
     text-align: left;
@@ -88,7 +88,7 @@ export default {
     margin-top: 30px;
   }
   @include av-mq(lap-and-up) {
-    width: 420px;
+    width: 460px;
     display: block;
     position: absolute;
   }

@@ -2,7 +2,7 @@
   <div class="page-index">
     <GlobalHeader/>
     <div class="wrapper">
-      <PageBanner title="Testimonials"/>
+      <PageBanner title="Our Clients"/>
       <Quotes :text="text.body" />
       <FreeAnalysis />
     </div>

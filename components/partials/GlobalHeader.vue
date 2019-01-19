@@ -8,7 +8,7 @@
     <div class="container">
       <div class="branding">
         <a href="/">
-          <img src="~/assets/images/5starhr_logo_text.png" alt="Five Star HR Logo" class="branding__img">
+          <img src="~/assets/images/logo.jpg" alt="Five Star HR Logo" class="branding__img">
         </a>
       </div>
       <img class="icon-menu icon-menu--open" src="~/assets/images/icon-menu.svg" alt="Menu" @click="openMenu = true" v-show="!openMenu" />
@@ -17,10 +17,7 @@
         <div class="main-menu" v-show="openMenu">
           <nav class="main-menu__nav">
             <a class="main-menu__link" v-for="link in menu" :href="link.href" v-bind:class="{ active: isActive(link) }" :key="link.title">{{link.title}}</a>
-            <div class="main-menu__call">
-              <img src="~/assets/images/icon-phone.svg" alt="" class="main-menu__icon">
-              <a href="tel://0422634359" class="main-menu__phone">0422 634 359</a>
-            </div>
+            <a href="tel://0422634359" class="main-menu__link main-menu__link--cta">FREE 1 HOUR HR CALL</a>
           </nav>
         </div>
       </transition>
@@ -38,8 +35,8 @@ export default {
         { href: '/', title: 'Home' },
         { href: '/about-us', title: 'About Us' },
         { href: '/services', title: 'Services' },
-        // {href: '#', title: 'Our Clients'},
-        { href: '/hr-advice', title: 'Free Advice' },
+        { href: '/our-clients', title: 'Our Clients' },
+        { href: '/hr-advice', title: 'HR Blog' },
         { href: '/contact-us', title: 'Contact Us' },
       ],
     };
@@ -57,11 +54,14 @@ $dark-blue: #0481ac;
 
 .global-header {
   width: 100%;
-  height: 100px;
+  height: 70px;
   position: fixed;
   z-index: 1000;
   background-color: $white;
-  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 0 4px #949599;
+  @include av-mq(lap-and-up) {
+    height: 99px;
+  }
   .fade-enter-active,
   .fade-leave-active {
     transition: opacity 0.5s;
@@ -79,21 +79,21 @@ $dark-blue: #0481ac;
 }
 
 .branding__img {
-  width: 120px;
-  margin-top: 5px;
   float: left;
   margin-left: -5px;
+  height: 70px;
 }
 
 .main-menu {
-  margin-top: 80px;
+  margin-top: 70px;
   display: block;
   position: fixed;
   width: 100%;
   @include av-mq(lap-and-up) {
     display: inline !important;
-    float: right;
-    margin-top: 25px;
+    float: left;
+    margin-top: 22px;
+    margin-left: 50px;
     width: initial;
     position: relative;
   }
@@ -102,8 +102,9 @@ $dark-blue: #0481ac;
 .main-menu__nav {
   height: 100vh;
   padding-top: 50px;
-  background: white;
+  background: #f1f6fb;
   @include av-mq(lap-and-up) {
+    background: #fff;
     display: inline;
     height: initial;
     padding-top: 0;
@@ -117,21 +118,44 @@ $dark-blue: #0481ac;
   width: 100%;
   color: #747474;
   display: block;
-  background-color: white;
   padding: 20px;
   text-align: center;
   text-decoration: none;
   font-size: 24px;
   @include av-mq(lap-and-up) {
     display: inline;
-    font-size: 18px;
-    padding: 0 15px;
+    background-color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 5px 15px;
     text-decoration: none;
     color: $dark-blue;
     vertical-align: text-bottom;
     &.active {
       font-weight: 600;
     }
+  }
+}
+
+
+.main-menu__link--cta {
+  color: white;
+  background-color: $mid-blue;
+  font-weight: bold;
+  max-width: 300px;
+  margin: auto;
+
+  @include av-mq(handheld-and-up) {
+    margin-left: 10px;
+    display: none;
+  }
+
+  @include av-mq(desk) {
+    display: inline;
+  }
+
+  &:hover {
+    color: white;
   }
 }
 
@@ -142,22 +166,6 @@ $dark-blue: #0481ac;
     display: inline-block;
     margin-left: 20px;
     padding: 0 10px;
-  }
-}
-
-.main-menu__phone {
-  font-size: 24px;
-  line-height: 2;
-  color: black;
-  text-decoration: none;
-  text-align: center;
-  display: block;
-  margin: 45px auto 0 auto;
-}
-
-.main-menu__call {
-  @include av-mq(lap-and-up) {
-    display: none;
   }
 }
 

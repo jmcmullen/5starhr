@@ -5,7 +5,8 @@
       <PageBanner title="Contact Us"/>
       <div class="contact__sections container">
         <div class="contact__email grid__cell 1/2">
-          <form class="contact__form">
+
+          <form class="contact__form" name="contact" method="POST" data-netlify="true">
 
             <h2 class="contact__title">Get in touch</h2>
             <p class="contact__body">Leave your name and number and we'll reach out.</p>
@@ -16,7 +17,7 @@
             <textarea rows="8" name="message" placeholder="Your message..." >
             </textarea>
 
-            <button class="button button-primary">Submit</button>
+            <button class="button button-primary" type="submit">Submit</button>
 
           </form>
         </div>

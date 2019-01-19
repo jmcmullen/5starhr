@@ -7,7 +7,7 @@
           <p class="free-analysis__body">In just one hour, we can help review your current HR policies, procedures, documentation and assess any areas of risk and propose solutions</p>
         </div>
         <div class="grid__cell 1/4--lap-and-up">
-          <a href="/contact-us" class="button">0422 634 359</a>
+          <a href="/contact-us" class="button">Free 1 hour hr call</a>
         </div>
       </div>
     </div>

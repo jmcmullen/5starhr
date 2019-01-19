@@ -1,8 +1,20 @@
 <template>
   <div class="page">
     <nuxt/>
+    <GlobalFooter/>
   </div>
 </template>
+
+<script>
+import GlobalFooter from '~/components/partials/GlobalFooter';
+
+export default {
+  components: {
+    GlobalFooter,
+  },
+};
+</script>
+
 
 <style lang="scss">
 html {

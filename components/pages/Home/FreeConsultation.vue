@@ -3,21 +3,27 @@
     <div class="container">
       <div class="grid">
         <div class="free-consult__services grid__cell 1/2--lap-and-up">
-          <h1 class="free-consult__title" v-html="md(text.title)"></h1>
+          <h2 class="free-consult__subtitle" v-html="md(text.intro)"></h2>
+          <!-- <h1 class="free-consult__title" v-html="md(text.title)"></h1>
           <form class="free-consult__form">
             <fieldset>
               <input type="text" class="free-consult__input" id="name" :placeholder="text.form.name">
               <input type="text" class="free-consult__input" id="phone" :placeholder="text.form.email"><br>
               <input class="button button-primary" type="submit" :value="text.form.button">
             </fieldset>
-          </form>
+          </form> -->
         </div>
         <div class="free-consult__features grid__cell 1/2--lap-and-up">
-          <h2 class="free-consult__subtitle" v-html="md(text.intro)"></h2>
+          <!-- <h2 class="free-consult__subtitle" v-html="md(text.intro)"></h2> -->
           <p class="free-consult__body">
             <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.one}}</span><br>
             <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.two}}</span><br>
-            <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.three}}</span>
+            <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.three}}</span><br>
+            <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.four}}</span><br>
+            <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.five}}</span><br>
+            <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.six}}</span><br>
+            <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.seven}}</span><br>
+            <img src="~/assets/images/icon-check-white.svg" alt="" class="free-consult__icon"> <span>{{text.features.eight}}</span>
           </p>
         </div>
       </div>
@@ -40,7 +46,11 @@ export default {
 .free-consult {
   background: linear-gradient(180deg, #abdcff, #0396ff);
   .container {
-    padding: 65px 0;
+    padding: 0 0 65px;
+  }
+
+  @include av-mq(lap-and-up) {
+    padding: 4rem 0;
   }
 }
 
@@ -50,7 +60,7 @@ export default {
 }
 
 .free-consult__body {
-  line-height: 2.4;
+  line-height: 1.6;
   text-align: left;
   margin-left: 19px;
   color: white;
@@ -86,7 +96,7 @@ export default {
   margin-top: 80px;
   padding: 0 20px;
   @include av-mq(lap-and-up) {
-    margin-top: 28px;
+    margin-top: 18px;
   }
 }
 
