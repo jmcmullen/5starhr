@@ -7,6 +7,8 @@ backend:
 
 media_folder: "static/uploads"
 public_folder: "/uploads"
+editor: 
+     preview: false
 
 collections: # A list of collections the CMS should be able to edit
   - name: "posts" # Used in routes, ie.: /admin/collections/:slug/edit
