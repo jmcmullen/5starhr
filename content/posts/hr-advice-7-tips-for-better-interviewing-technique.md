@@ -1,6 +1,7 @@
 ---
 title: 7 tips for better interviewing technique
-date: '2017-12-12 12:01am'
+date: '2019-01-10 12:01am'
+image: /uploads/interviewing techniques.jpg
 ---
 With the employment market in Sydney so tight - I often get asked to help my clients with recruitment. My clients are typically small-medium businesses – where a single bad hire can have really damaging financial consequences.
 
@@ -20,9 +21,9 @@ Interviewing is a skill that can be taught, and has some golden rules to make su
 
 ## 3. Be skeptical and look for red flags
 
-* Everybody ‘embellishes’ on their resume – but learn to understand which bits matter
+* Everybody ‘embellishes’ on their resume – but learn to understand which bits matter.
 * Do they have any gaps?
-* How stable has their job history been
+* How stable has their job history been?
 * Have they been promoted or given additional responsibilities in the companies they’ve previously worked in?
 * What are the cultures of the companies they’ve worked for previously?  Are they a small company candidate interviewing for a large company role or vice versa?  Are they used to more autonomy than you’re willing to give?  Or less?  
 * Look for any red flags or problem areas.  Where might they not fit?  What will they need from me and can I deliver?  Is this job above or below their skillset and how would I manage that?
@@ -38,11 +39,11 @@ Interviewing is a skill that can be taught, and has some golden rules to make su
 
 ## 6. Understand what drives potential applicants that will apply for your role and be able to articulate how your company meets those needs.
 
-* Different generations want different things, understand generational differences
-* Don't forget to make sure the job is going to appeal to the candidate
+* Different generations want different things, understand generational differences.
+* Don't forget to make sure the job is going to appeal to the candidate.
 
 ## 7. When you find what you’re looking for – close the deal!
 
-If your hiring process takes 2 months to make a decision, you risk losing your candidates. While you should never rush the process – you need to move quickly when you have found the right person
+If your hiring process takes 2 months to make a decision, you risk losing your candidates. While you should never rush the process – you need to move quickly when you have found the right person.
 
 **AND FINALLY: Don’t forget to always check their references!**
