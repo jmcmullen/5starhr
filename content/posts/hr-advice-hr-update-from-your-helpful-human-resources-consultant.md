@@ -1,5 +1,5 @@
 ---
-title: HR Update from your helpful human resources consultant!
+title: June 2019 - HR Update from your helpful human resources consultant!
 date: '2019-06-04 05:40pm'
 image: /uploads/business-2026646_1920.png
 ---
