@@ -3,32 +3,24 @@
     <div class="container">
       <div class="grid">
         <div class="grid__cell 1/2--lap-and-up">
-          <h5 class="our-services__subtitle">What We Do</h5>
-          <h2 class="our-services__title">We provide HR Services that will minimise risk and maximise sustainability</h2>
+          <h5 class="our-services__subtitle">{{text.subtitle}}</h5>
+          <h2 class="our-services__title">{{text.title}}</h2>
         </div>
         <div class="grid__cell 1/2--lap-and-up">
           <p class="our-services__body">
-            Whether you are having trouble finding, recruiting, retaining and motivating staff, struggling with employee expectations, navigating the minefield of compliance (IR and WHS), or looking to develop or maintain a market-leading business with outstanding Human Resources practices and sustainable strategies, Five Star HR will partner with your organisation to help you get the most out of your most valuable asset – your people.</p>
+            {{text.body}}</p>
         </div>
       </div>
     </div>
     <div class="container">
       <div class="grid--center">
-            <div class="our-services__service grid__cell 1/3--lap-and-up">
-              <h4 class="our-services__service-desc">Adhoc HR Advice and Support</h4>
+            <div class="our-services__service grid__cell 1/3--lap-and-up" v-for="(service, i) in text.services" :key="i">
+              <h4 class="our-services__service-desc">
+                {{service.title}}
+              </h4>
               <p class="our-services__service-body">
-                From as little as $165 per month we can help your resolve your people issues simply and quickly.  We will provide phone and email support and answer all your employee related questions in relation to employment legislation and compliance and offer practical advice and solutions to all your staffing issues.
+                {{service.body}}
               </p>
-            </div>
-            <div class="our-services__service grid__cell 1/3--lap-and-up">
-              <h4 class="our-services__service-desc">Outsourced HR Manager & Coach</h4>
-              <p class="our-services__service-body">
-                We can become your dedicated HR Manager (working onsite with your team on a regular scheduled basis – 1 day a week, month or fortnight) and look after all your HR responsibilities or we can offer a blended approach by coaching one of your existing staff members to take on the day-to-day HR activities, while we continue to provide strategic HR support.</p>
-            </div>
-            <div class="our-services__service grid__cell 1/3--lap-and-up">
-              <h4 class="our-services__service-desc">HR Project Manager</h4>
-              <p class="our-services__service-body">
-                Perhaps you just need help on a short-term basis to manage a project, such as implement an online HRS or WHS system, support a restructure and redundancy process, or cover a long-term absence within your HR team.  We can provide additional short-term support and HR expertise within your business.</p>
             </div>
       </div>
     </div>
@@ -37,7 +29,7 @@
     </div>
       <div class="container" style="justify-content: flex-start">
         <div class="programs">
-          <p>The following Programs are our most popular services delivered to businesses, coupled with ongoing support and coaching:</p>
+          <p>The following Programs are our most popular HR services delivered to businesses throughout Sydney, coupled with ongoing support and coaching:</p>
 
           <ol>
             <li class="four columns"><strong>HR Audits</strong> - using a planned approach we review your current HR practice, objectively identify issues, risks and opportunities within the business, and develop a 3, 6 or 12 month’ HR Plan for the business.</li>
@@ -54,7 +46,15 @@
 
 <script>
 export default {
-  props: ['title'],
+  props: {
+    text: {
+      type: Object,
+      required: true,
+    },
+    title: {
+      type: String,
+    },
+  },
 };
 </script>
 

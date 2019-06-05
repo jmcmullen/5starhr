@@ -4,7 +4,7 @@
     <div class="wrapper">
       <PageBanner title="Our Services"/>
       <!--<FrequentQuestions/>-->
-      <OurServices/>
+      <OurServices :text="text.body"/>
       <FreeAnalysis/>
     </div>
   </div>
@@ -37,6 +37,9 @@ export default {
       },
     ],
   },
+  asyncData: async ({ app }) => ({
+    text: await app.$content('/pages').get('/services'),
+  }),
 };
 </script>
 
