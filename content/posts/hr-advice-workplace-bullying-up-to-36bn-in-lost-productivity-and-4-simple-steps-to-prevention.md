@@ -1,7 +1,7 @@
 ---
 title: >-
-  Workplace Bullying: up to $36BN in lost productivity - and 4 Simple steps to
-  prevention
+  Jan 2012 - Workplace Bullying: up to $36BN in lost productivity - and 4 Simple
+  steps to prevention
 date: '2012-11-01 11:43pm'
 ---
 The Productivity Commission estimates workplace bullying is costing the country $6 billion to $36 billion a year. In May 2012, the Prime Minister launched a national review of bullying in the workplace. Research suggests that as many as 30% of Australian workers experienced bullying in the workplace in the past twelve months. That means this issue is almost certainly costing your business money … 
