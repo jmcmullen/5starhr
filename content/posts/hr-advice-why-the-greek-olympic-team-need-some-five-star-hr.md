@@ -1,5 +1,5 @@
 ---
-title: Why the Greek Olympic team need some Five Star HR
+title: '2012, July - Why the Greek Olympic team need some Five Star HR'
 date: '2012-07-31 11:48pm'
 image: /uploads/greek-athlete.jpg
 ---
