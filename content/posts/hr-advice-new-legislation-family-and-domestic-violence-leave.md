@@ -1,5 +1,5 @@
 ---
-title: New Legislation - Family and Domestic Violence Leave
+title: '2018, Jan - New Legislation - Family and Domestic Violence Leave'
 date: '2018-12-12 05:06pm'
 image: /uploads/domestic violence leave.jpg
 ---
@@ -21,4 +21,4 @@ This new entitlement differs from standard forms of leave under the Fair Work Ac
 
 Employers may choose to provide employees with additional entitlements (above and beyond what is legislatively required).  For example, allowing employees to access paid personal/carer's leave entitlements for reasons related to domestic or family violence or providing additional paid leave.
 
-Please reach out if you'd like help communicating these new leave provisions to your employees or if you'd like help developing and implementing a policy that is consistent with any contract, Award or enterprise agreement which applies to employees within your business.
+Please reach out if you'd like help communicating these new leave provisions to your employees or if you'd like help developing and implementing a policy that is consistent with any contract, Award or enterprise agreement which applies to employees within your business.  Consider engaging HR consultancy services to help manage, develop and implement HR policies and processes that will help engage, retain and develop your employees as well as ensure compliance and best practice with industry standards.
