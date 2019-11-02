@@ -3,7 +3,7 @@
     <div class="container about-us__spiel">
       <div class="grid">
         <div class="grid__cell 1/3--lap-and-up">
-          <img class="about-us__portrait" v-bind:src="text.image" alt="" />
+          <img class="about-us__portrait" v-bind:src="text.image" alt />
         </div>
         <div class="grid__cell 2/3--lap-and-up about-us__text">
           <h5 class="about-us__subtitle" v-html="text.subtitle"></h5>
@@ -12,7 +12,7 @@
           <!-- <div class="about-us__partner">
             <img class="about-us__partner-img about-us__partner-img--ahri" src="~/assets/images/ahri-logo.jpg" alt="">
             <img class="about-us__partner-img about-us__partner-img--coach" src="~/assets/images/hr-coach-logo.jpg" alt="">
-          </div> -->
+          </div>-->
         </div>
       </div>
     </div>
@@ -96,5 +96,6 @@ export default {
 .about-us__body p img {
   display: block;
   margin: 25px auto;
+  max-width: 100%;
 }
 </style>
