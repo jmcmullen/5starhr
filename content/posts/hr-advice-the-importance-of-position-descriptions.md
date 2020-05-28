@@ -1,5 +1,5 @@
 ---
-title: '2012, Feb - The importance of Position Descriptions'
+title: The importance of Position Descriptions
 date: '2012-02-24 12:13am'
 ---
 SO - do you have up-to-date, clear Position Descriptions (PD) for every role? Really? Honestly? If you don’t – how can you be sure that your people are working on the things your business needs them to be working on? With your people likely being your highest variable cost – can you really afford to be duplicating tasks, or leaving gaping holes? 
