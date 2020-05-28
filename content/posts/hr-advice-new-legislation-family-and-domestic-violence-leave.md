@@ -1,5 +1,5 @@
 ---
-title: '2018, Jan - New Legislation - Family and Domestic Violence Leave'
+title: New Legislation - Family and Domestic Violence Leave
 date: '2018-12-12 05:06pm'
 image: /uploads/domestic violence leave.jpg
 ---
