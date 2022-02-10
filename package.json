@@ -38,7 +38,7 @@
     "eslint-plugin-prettier": "^2.3.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^7.0.0",
     "normalize.css": "^7.0.0",
     "nuxt-netlify-cms": "^2.0.1",
     "nuxt-sass-resources-loader": "^1.1.0",
